@@ -1,0 +1,21 @@
+@import "../colors/dracula.css";
+@import "../font/fonts.css";
+
+#navbar{
+    box-shadow: 0px 4px 1em black;
+    background-color: var(--dracula-background);
+}
+
+.dsicari-text-logo{
+    font-family:  'Secular One';
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+body{
+    background-color: var(--dracula-comment);
+}

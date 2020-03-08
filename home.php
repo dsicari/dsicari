@@ -1,0 +1,10 @@
+<html>
+    <?php 
+        include_once("templates/head.php");
+        include_once("widgets/navbar.php");
+        echo("oi");
+    ?>
+    <body>
+        teste
+    </body>
+</html>
