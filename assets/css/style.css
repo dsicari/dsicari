@@ -1,9 +1,23 @@
 @import "../colors/dracula.css";
 @import "../font/fonts.css";
 
-#navbar{
-    box-shadow: 0px 4px 1em black;
-    background-color: var(--dracula-background);
+.navbar{
+    /* box-shadow: 0px 4px 1em black; */
+    padding: 0 0 0 0 !important;
+}
+
+.navbar-toggler{
+    margin-right: 10px;
+}
+
+.bg-dark{
+    background-color: var(--dracula-background) !important;
+}
+
+.dsicari-logo{
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .dsicari-text-logo{
@@ -14,8 +28,50 @@
     -webkit-text-stroke-color: black;
 }
 
+.nav-link{
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+}
 
+.nav-link:hover{
+    color: white !important;
+}
 
 body{
     background-color: var(--dracula-comment);
 }
+
+.title-cover-home{    
+    line-height: 1;
+    font-family: 'Fira Code';
+    font-size: 200px;
+    color: var(--dracula-purple);
+    text-shadow: 4px 4px black;
+}
+
+.title-cover-home-second{    
+    line-height: 1;
+    font-family: 'Fira Code';
+    font-size: 150px;
+    color: var(--dracula-purple);
+    text-shadow: 4px 4px black;
+}
+
+.title-cover-home-img{    
+    margin-top: 25px;
+}
+
+.subtitle-cover-home{    
+    line-height: 1;
+    font-family: 'Roboto Slab';
+    font-size: 50px;
+    color: var(--dracula-cyan);
+}
+
+.subtitle-cover-home-level2{    
+    line-height: 1;
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    color: var(--dracula-cyan);
+}
+
