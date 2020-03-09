@@ -1,0 +1,75 @@
+/* body{
+    background-image: url("../img/developer_pattern.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} */
+
+.title-cover-home{    
+    line-height: 1;
+    font-family: 'Fira Code';
+    font-size: 200px;
+    color: var(--dracula-purple);
+    text-shadow: 3px 3px black;
+}
+
+.title-cover-home-second{    
+    line-height: 1.07;
+    font-family: 'Fira Code';
+    font-size: 150px;
+    color: var(--dracula-purple);
+    text-shadow: 3px 3px black;
+}
+
+.title-cover-home-img{    
+    margin-top: 25px;
+}
+
+.title-cover-home-img > img{
+    content:url("../img/developer_pattern.svg");
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.subtitle-cover-home{    
+    line-height: 1;
+    font-family: 'Roboto Slab';
+    font-size: 50px;
+    color: var(--dracula-title);
+}
+
+.subtitle-cover-home-level2{    
+    line-height: 1;
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    color: var(--dracula-title);
+}
+
+@media only screen and (max-width: 800px) {
+    .title-cover-home{ 
+        margin-top: 5%;
+        font-size: 25vw;
+    }
+    
+    .title-cover-home-second{
+        font-size: 18vw;      
+    }
+
+    .row-subtitle{
+        margin-top: 10%;
+    }
+
+    .subtitle-cover-home{    
+        font-size: 30px;
+    }
+    
+    .subtitle-cover-home-level2{    
+        font-size: 20px;
+    }
+    
+    .title-cover-home-img > img{
+        max-width: 60%;
+        float: right;
+        content:url("../img/developer_pattern_mobile.svg");
+    }
+}

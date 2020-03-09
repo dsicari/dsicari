@@ -1,33 +1,38 @@
 <html>
-    <?php 
-        include_once("templates/head.php");
-        include_once("widgets/navbar.php");
-    ?>
+    <head>
+        <?php include_once("templates/head.php"); ?>
+        <link rel="stylesheet" href="./assets/css/home.css">
+    </head>
+
+    <?php include_once("widgets/navbar.php"); ?>
+
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-6">
-                    <span class="title-cover-home">DANILO</span>                         
-                    <span class="title-cover-home-second"><br>de nadai</span>
-                    <span class="title-cover-home-second"><br>sicari</span>                                      
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="title-cover-home">DANILO</div>                         
+                    <div class="title-cover-home-second">de nadai</div>
+                    <div class="title-cover-home-second">sicari</div>                                      
                 </div>
-                <div class="col-3 title-cover-home-img">
-                    <img src="assets/img/developer_pattern.svg" width="500px">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <span class="subtitle-cover-home" style="line-height: 1;">
-                        <br>maker, amateur radio, drummer, enthusiastic,
-                    </span>
-                    <span class="subtitle-cover-home-level2" style="line-height: 1;">
-                        <br>traveller, fire appreciator, bottle opener fanatic, slow drinker...
-                    </span>
+                <div class="col-lg-4 title-cover-home-img">
+                    <img src="assets/img/developer_pattern.svg">
                 </div>
             </div>
-        </div>
-        
+            <div class="row row-subtitle">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 col-sm-12">
+                    <div class="subtitle-cover-home" style="line-height: 1;">
+                        maker, amateur radio, drummer, enthusiastic,
+                    </div>
+                    <div class="subtitle-cover-home-level2" style="line-height: 1;">
+                        traveller, fire appreciator, bottle opener fanatic, slow drinker...
+                    </div>
+                </div>
+            </div>
+        </div>        
     </body>
+
+    <?php include_once("templates/footer.php"); ?>
+
 </html>

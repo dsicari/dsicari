@@ -3,14 +3,22 @@
 
 .navbar{
     /* box-shadow: 0px 4px 1em black; */
+    /* Navbar vem com padding padrao */
     padding: 0 0 0 0 !important;
 }
 
 .navbar-toggler{
+    /* Manter botao menu dropdown responsivo um pouco a esquerda */
+    margin-right: 10px;
+}
+
+.navbar-collapse{
+    /* Manter menu navbar um pouco a esquerda */
     margin-right: 10px;
 }
 
 .bg-dark{
+    /* Sobrepor cor fundo padrao da navbar */
     background-color: var(--dracula-background) !important;
 }
 
@@ -40,38 +48,3 @@
 body{
     background-color: var(--dracula-comment);
 }
-
-.title-cover-home{    
-    line-height: 1;
-    font-family: 'Fira Code';
-    font-size: 200px;
-    color: var(--dracula-purple);
-    text-shadow: 4px 4px black;
-}
-
-.title-cover-home-second{    
-    line-height: 1;
-    font-family: 'Fira Code';
-    font-size: 150px;
-    color: var(--dracula-purple);
-    text-shadow: 4px 4px black;
-}
-
-.title-cover-home-img{    
-    margin-top: 25px;
-}
-
-.subtitle-cover-home{    
-    line-height: 1;
-    font-family: 'Roboto Slab';
-    font-size: 50px;
-    color: var(--dracula-cyan);
-}
-
-.subtitle-cover-home-level2{    
-    line-height: 1;
-    font-family: 'Roboto Slab';
-    font-size: 30px;
-    color: var(--dracula-cyan);
-}
-
