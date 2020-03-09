@@ -30,6 +30,11 @@
                     </div>
                 </div>
             </div>
+            <div class="row row-subtitle">
+                <div class="col-sm-12">
+                    <a class="home-contact" href="/contato.php">contato</a>
+                </div>
+            </div>
         </div>        
     </body>
 

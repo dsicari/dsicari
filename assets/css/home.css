@@ -5,10 +5,19 @@
     background-position: center;
 } */
 
+
+.title-cover-home{    
+    margin-top: 4vh;
+}
+
+.title-cover-home-img{    
+    margin-top: 6vh;
+}
+
 .title-cover-home{    
     line-height: 1;
     font-family: 'Fira Code';
-    font-size: 200px;
+    font-size: 13vw;
     color: var(--dracula-purple);
     text-shadow: 3px 3px black;
 }
@@ -16,13 +25,9 @@
 .title-cover-home-second{    
     line-height: 1.07;
     font-family: 'Fira Code';
-    font-size: 150px;
+    font-size: 9vw;
     color: var(--dracula-purple);
     text-shadow: 3px 3px black;
-}
-
-.title-cover-home-img{    
-    margin-top: 25px;
 }
 
 .title-cover-home-img > img{
@@ -31,24 +36,47 @@
     max-height: 100%;
 }
 
+.row-subtitle{
+    margin-top: 1vh;
+}
+
 .subtitle-cover-home{    
     line-height: 1;
     font-family: 'Roboto Slab';
-    font-size: 50px;
+    font-size: 3.5vw;
     color: var(--dracula-title);
 }
 
 .subtitle-cover-home-level2{    
     line-height: 1;
     font-family: 'Roboto Slab';
-    font-size: 30px;
+    font-size: 2.5vw;
     color: var(--dracula-title);
 }
 
-@media only screen and (max-width: 800px) {
+.home-contact{
+    text-decoration: none;
+    line-height: 1;
+    display: none;
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    color: var(--dracula-green);
+}
+
+.home-contact:link, .home-contact:visited, .home-contact:hover, .home-contact:active{
+    text-decoration: none;
+    /* color: var(--dracula-green) !important;  NAO PEGA COR, fica azul! */
+}
+
+@media only screen and (max-width: 800px) {    
+
     .title-cover-home{ 
         margin-top: 5%;
         font-size: 25vw;
+    }
+
+    .title-cover-home-img{    
+        margin-top: 2vh;
     }
     
     .title-cover-home-second{
@@ -56,20 +84,25 @@
     }
 
     .row-subtitle{
-        margin-top: 10%;
+        margin-top: 2vh;
     }
 
     .subtitle-cover-home{    
-        font-size: 30px;
+        font-size: 6vw;
     }
     
     .subtitle-cover-home-level2{    
-        font-size: 20px;
+        font-size: 5vw;
     }
     
     .title-cover-home-img > img{
         max-width: 60%;
         float: right;
         content:url("../img/developer_pattern_mobile.svg");
+    }
+
+    .home-contact{
+        
+        display: block;
     }
 }

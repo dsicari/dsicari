@@ -23,6 +23,9 @@
 }
 
 .dsicari-logo{
+    max-width: 100%;
+    max-height: 100%;
+    height: 7vh;
     margin-top: 2px;
     margin-right: 10px;
     margin-left: 10px;
@@ -31,7 +34,7 @@
 .dsicari-text-logo{
     font-family:  'Secular One';
     color: white;
-    font-size: 50px;
+    font-size: 5vh;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
@@ -47,4 +50,23 @@
 
 body{
     background-color: var(--dracula-comment);
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-link{
+        margin-left: 10px;
+        font-size: 4vh;
+    }
+
+    .dsicari-logo{
+        margin-top: 10px;
+        height: 5vh;
+    }
+
+    .dsicari-text-logo{
+        font-size: 10vw;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+
 }
