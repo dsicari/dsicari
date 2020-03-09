@@ -1,0 +1,53 @@
+.title-cover-home{    
+    line-height: 1.4;
+    font-family: 'Roboto Slab';    
+    font-size: 7.5vw;
+    font-weight: 700;
+    color: var(--dracula-red);
+    text-shadow: 3px 3px black;
+}
+
+.subtitle-cover-home{
+    font-family: 'Roboto Condensed';
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--dracula-foreground);
+    text-shadow: 2px 2px black;
+    text-align: right;
+}
+
+.row-social-media{
+    margin-top: 8vh;
+}
+
+.social-media{
+    font-family: 'Roboto Slab';    
+    font-size: 4vw;
+    font-weight: 600;
+    color: var(--dracula-title);
+}
+
+.contact-social-media{
+    font-family: 'Roboto Slab';    
+    font-size: 2vw;
+    font-weight: 300;
+    color: black;
+}
+
+.shark-icon{
+    height: 10vw;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {    
+    .title-cover-home{ 
+        margin-top: 5%;
+        line-height: 1.1;
+        font-size: 17vw;
+    }
+
+    .subtitle-cover-home{
+        font-size: 5vw;
+    }
+}
