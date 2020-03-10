@@ -15,3 +15,13 @@
     text-shadow: 2px 2px black;
     text-align: right;
 }
+
+.link-big{
+    color: var(--dracula-green);
+    text-align: center;
+}
+
+.description-item .tech-image{
+    margin-right: 25px;
+    /* width: 6vw; */
+}

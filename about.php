@@ -25,15 +25,16 @@
                 <div class="col-lg-1 col-sm-1"></div>
             </div>     
 
-            <div class="row">
+            <!-- PRESENTATION BOX -->
+            <div id="apresentacao" class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-10 content">
                     <div class="container-fluid presentation-box">
                         <div class="row">
-                            <div class="col-lg-3">
-                                <img src="https://via.placeholder.com/350">
+                            <div class="col-md-3">
+                                <img class="avatar-img" src="https://via.placeholder.com/350">
                             </div>
-                            <div class="col-lg-9">
+                            <div class="col-md-9">
                                 <span class="title">Lorem ipsum dolor sit</span>
                                 <hr>
                                 <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
@@ -43,7 +44,364 @@
                 </div>
                 <div class="col-lg-1"></div>
             </div>
-            
+
+            <!-- LINKS PAGE -->
+            <div id="links" class="row mt-2">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2">
+                    <a href="#formacao" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>formação</span>                        
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#xp" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>xp</span>                        
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#skills" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>skills</span>                        
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#skills" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>hobbies</span>                        
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#skills" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>projetos</span>                        
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+
+            <!-- FORMACAO -->
+            <div id="formacao" class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 content">
+                    <div class="container-fluid list-box">
+
+                        <div class="row">
+                            <div class="col-md-12 title">
+                                <span>Formação</span>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <!-- CURSO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Curso</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>Informação Instituição</b>
+                                    <br>Local
+                                    <br>Ano Conclusão
+                                    <br>LINK INSTITUICAO
+                                </span>
+                            </div>
+                        </div>    
+
+                        <!-- CURSO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Curso</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>Informação Instituição</b>
+                                    <br>Local
+                                    <br>Ano Conclusão
+                                    <br>LINK INSTITUICAO
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- CURSO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Curso</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>Informação Instituição</b>
+                                    <br>Local
+                                    <br>Ano Conclusão
+                                    <br>LINK INSTITUICAO
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>                
+                <div class="col-lg-1"></div>
+            </div>
+
+            <!-- XP -->
+            <div id="xp" class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 content">
+                    <div class="container-fluid list-box">
+
+                        <div class="row">
+                            <div class="col-md-12 title">
+                                <span>XP</span>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCIA -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Empresa</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>Cargo</b>
+                                    <br>Periodo
+                                    <br>Descrição Cargo
+                                    <br>LINK EMPRESA
+                                </span>
+                            </div>
+                        </div>    
+
+                        <!-- EXPERIENCIA -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Empresa</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>Cargo</b>
+                                    <br>Periodo
+                                    <br>Descrição Cargo
+                                    <br>LINK EMPRESA
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- EXPERIENCIA -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Empresa</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>Cargo</b>
+                                    <br>Periodo
+                                    <br>Descrição Cargo
+                                    <br>LINK EMPRESA
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+            <div id="skills" class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 content">
+                    <div class="container-fluid list-box">
+
+                        <div class="row">
+                            <div class="col-md-12 title">
+                                <span>SKILLS</span>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <!-- MAIN STACK -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Main Stack</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <img class="tech-image" src="assets/icon/technologies/java.svg">
+                                <img class="tech-image" src="assets/icon/technologies/spring.svg">
+                                <img class="tech-image" src="assets/icon/technologies/hibernate.svg">
+                                <img class="tech-image" src="assets/icon/technologies/mysql.svg">
+                                <img class="tech-image" src="assets/icon/technologies/docker.svg">
+                            </div>
+                        </div>    
+
+                        <!-- JA FIZ MUITA COISA EM -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Já fiz muita coisa em</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <img class="tech-image" src="assets/icon/technologies/builder_c++.svg">
+                                <img class="tech-image" src="assets/icon/technologies/csharp.svg">
+                                <img class="tech-image" src="assets/icon/technologies/python.svg">
+                                <img class="tech-image" src="assets/icon/technologies/php.svg">
+                            </div>
+                        </div> 
+
+                        <!-- E TAMBEM EM -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>E também em</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <img class="tech-image" src="assets/icon/technologies/arduino.svg">
+                                <img class="tech-image" src="assets/icon/technologies/arm.svg">
+                                <img class="tech-image" src="assets/icon/technologies/arm_mbed.svg">
+                                <img class="tech-image" src="assets/icon/technologies/raspberry.svg">
+                                <img class="tech-image" src="assets/icon/technologies/qt.svg">
+                            </div>
+                        </div> 
+
+                        <!-- CONHECENDO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Conhecendo</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <img class="tech-image" src="assets/icon/technologies/flutter.svg">
+                                <img class="tech-image" src="assets/icon/technologies/mongodb.svg">
+                                <img class="tech-image" src="assets/icon/technologies/nodejs.svg">
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOBBIES -->
+            <div id="hobbies" class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 content">
+                    <div class="container-fluid list-box">
+
+                        <div class="row">
+                            <div class="col-md-12 title">
+                                <span>Hobbies</span>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <!-- HOBBY -->
+                        <div class="row">
+                            <div class="container">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                               
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETOS -->
+            <div id="projetos" class="row mb-5">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 content">
+                    <div class="container-fluid list-box">
+
+                        <div class="row">
+                            <div class="col-md-12 title">
+                                <span>Projetos</span>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Projeto</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    Descrição
+                                    <br>LINK EMPRESA
+                                </span>
+                            </div>
+                        </div>    
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Projeto</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    Descrição
+                                    <br>LINK EMPRESA
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Projeto</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    Descrição
+                                    <br>LINK EMPRESA
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
 
         </div>        
     </body>
