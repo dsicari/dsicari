@@ -1,12 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <ul class="navbar-nav">
-        <li class="nav-item">  
-            <img class="dsicari-logo align-top" src="./assets/icon/ovni_min.svg" width="60" height="60">          
-            <span class="navbar-link dsicari-text-logo" href="#">
-                dsicari
-            </span>
-        </li>       
-    </ul>
+    <a id="logo-navbar" class="nav-link" href="./home.php" class="text-decoration-none">
+        <ul class="navbar-nav">
+            <li class="nav-item">  
+                <img class="dsicari-logo align-top" src="./assets/icon/ovni_min.svg" width="60" height="60">          
+                <span class="navbar-link dsicari-text-logo" href="#">
+                    dsicari
+                </span>
+            </li>    
+        </ul>
+    </a> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

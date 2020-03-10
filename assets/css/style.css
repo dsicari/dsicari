@@ -4,7 +4,12 @@
 .navbar{
     /* box-shadow: 0px 4px 1em black; */
     /* Navbar vem com padding padrao */
-    padding: 0 0 0 0 !important;
+    padding: 0 !important;
+}
+
+#logo-navbar{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .navbar-toggler{
@@ -25,16 +30,15 @@
 .dsicari-logo{
     max-width: 100%;
     max-height: 100%;
-    height: 7vh;
-    margin-top: 2px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
 .dsicari-text-logo{
+    line-height: 1.4;
+    font-size: 45px;
     font-family:  'Secular One';
     color: white;
-    font-size: 5vh;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
@@ -52,21 +56,51 @@ body{
     background-color: var(--dracula-comment);
 }
 
+hr{
+    color: var(--dracula-gray);
+    background-color: var(--dracula-gray);
+    height: 10px;
+}
+
+.content{
+    border-radius: 5px;
+    /* box-sizing: border-box; ??? */
+    border: 5px solid var(--dracula-selection);
+    background-color: var(--dracula-foreground);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 1.8vw;
+    padding-bottom: 1.8vw;
+}
+
+.title{
+    line-height: 1.1;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 4vw;
+}
+
+.subtitle{
+    line-height: 1.1;
+    font-family: 'Roboto Slab';
+    font-weight: 200;
+    font-size: 1.5vw;
+}
+
 @media only screen and (max-width: 800px) {
     .nav-link{
         margin-left: 10px;
         font-size: 4vh;
     }
 
-    .dsicari-logo{
+    /* .dsicari-logo{
         margin-top: 10px;
         height: 5vh;
-    }
+    } */
 
-    .dsicari-text-logo{
+    /* .dsicari-text-logo{
         font-size: 10vw;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
-    }
+    } */
 
 }

@@ -1,0 +1,17 @@
+.title-cover-home{    
+    line-height: 1.4;
+    font-family: 'Roboto Slab';    
+    font-size: 7.5vw;
+    font-weight: 700;
+    color: var(--dracula-orange);
+    text-shadow: 3px 3px black;
+}
+
+.subtitle-cover-home{
+    font-family: 'Roboto Condensed';
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--dracula-pink);
+    text-shadow: 2px 2px black;
+    text-align: right;
+}

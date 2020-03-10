@@ -32,7 +32,7 @@
             </div>
             <div class="row row-subtitle">
                 <div class="col-sm-12">
-                    <a class="home-contact" href="/contato.php">contato</a>
+                    <a class="home-contact" href="./contact.php" class="text-decoration-none">contato</a>
                 </div>
             </div>
         </div>        

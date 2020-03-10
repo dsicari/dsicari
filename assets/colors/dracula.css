@@ -2,7 +2,7 @@
     --dracula-background: #44475A;
     --dracula-comment: #6272A4;
     --dracula-title: #A0C8FF;
-    --dracula-selection: #44475A;
+    --dracula-selection: #282A36;
     --dracula-foreground: #F8F8F2;
     --dracula-cyan: #8BE9FD;
     --dracula-green: #50FA7B;
@@ -11,4 +11,5 @@
     --dracula-purple: #BD93F9;
     --dracula-red: #FF5555;
     --dracula-yellow: #F1FA8C;
+    --dracula-gray: #C4C4C4;
 }

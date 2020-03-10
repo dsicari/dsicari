@@ -17,13 +17,17 @@
 }
 
 .row-social-media{
-    margin-top: 8vh;
+    margin-top: 10vh;
 }
 
 .social-media{
+    cursor: pointer;
+}
+
+.title-social-media{
     font-family: 'Roboto Slab';    
-    font-size: 4vw;
-    font-weight: 600;
+    font-size: 3.3vw;
+    font-weight: 700;
     color: var(--dracula-title);
 }
 
@@ -44,10 +48,34 @@
     .title-cover-home{ 
         margin-top: 5%;
         line-height: 1.1;
-        font-size: 17vw;
+        font-size: 12vw;
+    }
+
+    .row-social-media{
+        margin-top: 3.5vh;
+    }
+
+    .social-media{
+        margin-bottom: 2vh;
     }
 
     .subtitle-cover-home{
         font-size: 5vw;
+    }
+
+    .title-social-media{        
+        line-height: 1;
+        font-size: 7vw;
+    }
+    
+    .contact-social-media{
+        font-size: 5vw;
+    }
+    
+    .shark-icon{
+        height: 25vw;
+        position: absolute;
+        bottom: 2vh;
+        right: 10vw;
     }
 }
