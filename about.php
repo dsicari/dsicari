@@ -47,43 +47,43 @@
 
             <!-- LINKS PAGE -->
             <div id="links" class="row mt-2">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2">
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
                     <a href="#formacao" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>formação</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-md-2">
                     <a href="#xp" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>xp</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-md-2">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>skills</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-md-2">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>hobbies</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-md-2">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>projetos</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-1"></div>
+                <div class="col-md-1"></div>
             </div>
 
             <!-- FORMACAO -->
@@ -315,24 +315,18 @@
                         <!-- HOBBY -->
                         <div class="row">
                             <div class="container">
-                                <div class="card-deck">
-                                    <div class="card">
-                                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-4">                                        
+                                        <img class="img-fluid" src="http://placehold.it/300" alt="">
+                                        <div style="text-align: center;" class="description-item mt-2">Hobby</div>
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <img class="img-fluid" src="http://placehold.it/300" alt="">
+                                        <div style="text-align: center;" class="description-item mt-2">Hobby</div>
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <img class="img-fluid" src="http://placehold.it/300" alt="">
+                                        <div style="text-align: center;" class="description-item mt-2">Hobby</div>
                                     </div>
                                 </div>
                             </div>

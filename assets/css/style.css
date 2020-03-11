@@ -58,7 +58,7 @@ body{
 
 .content{
     margin-top: 3vh;
-    border-radius: 5px;
+    border-radius: 1vw;
     /* box-sizing: border-box; ??? */
     border: 5px solid var(--dracula-selection);
     background-color: var(--dracula-foreground);
