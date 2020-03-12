@@ -141,6 +141,40 @@ hr{
         font-size: 4vh;
     }
 
+    hr{
+        height: 0.3vh;
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+    }
+
+    .content{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .content .presentation-box .title,
+    .content .list-box .title{
+        font-size: 6vw;
+    }
+
+    .content .presentation-box .subtitle{
+        font-size: 3vw;
+    }
+
+    .list-box .title-item{
+        font-size: 4vw;
+    }
+
+    .list-box .description-item{
+        font-size: 2.5vw;
+    }
+
+    .description-item .tech-image{
+        margin-top: 10px;
+        margin-right: 25px;
+        width: 8vw;
+    }
+
     /* .dsicari-logo{
         margin-top: 10px;
         height: 5vh;
