@@ -1,0 +1,18 @@
+.title-cover-home{    
+    line-height: 1.4;
+    font-family: 'Roboto Slab';    
+    font-size: 7.5vw;
+    font-weight: 700;
+    color: var(--dracula-green);
+    text-shadow: 3px 3px black;
+}
+
+.link-big{
+    color: var(--dracula-green);
+    text-align: center;
+}
+
+.description-item .tech-image{
+    margin-right: 25px;
+    /* width: 6vw; */
+}

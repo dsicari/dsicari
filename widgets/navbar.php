@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a id="logo-navbar" class="nav-link" href="./home.php" class="text-decoration-none">
         <ul class="navbar-nav">
             <li class="nav-item">  

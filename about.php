@@ -337,7 +337,7 @@
             </div>
 
             <!-- PROJETOS -->
-            <div id="projetos" class="row mb-5">
+            <div id="projetos" class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-10 content">
                     <div class="container-fluid list-box">
@@ -396,10 +396,12 @@
                     </div>
                 </div>
             </div>
+        </div> 
 
-        </div>        
+        <?php include_once("widgets/go_top_button.php"); ?>
+
     </body>
-
+    
     <?php include_once("templates/footer.php"); ?>
 
 </html>
