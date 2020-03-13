@@ -21,3 +21,27 @@
     float: right;
     margin-right: 0.5vw;
 }
+
+@media only screen and (max-width: 800px) {
+    .title-cover-home{ 
+        margin-top: 5%;
+        line-height: 1.1;
+        font-size: 12vw;
+    }
+
+    .date-archive{
+        font-size: 3vw;
+        text-align: right;
+    }
+
+    .badge{
+        font-size: 2vw;
+        float: right;
+        margin-right: 0.5vw;
+    }
+
+    .badges{
+        margin-top: 5px;
+    }
+    
+}

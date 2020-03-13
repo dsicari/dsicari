@@ -60,6 +60,7 @@
         </div>        
     </body>
 
+    <?php include_once("widgets/go_top_button.php") ?>
     <?php include_once("templates/footer.php"); ?>
 
 </html>
