@@ -16,3 +16,17 @@
     margin-right: 25px;
     /* width: 6vw; */
 }
+
+@media only screen and (max-width: 800px) {    
+    .title-cover-home{ 
+        margin-top: 5%;
+        line-height: 1.1;
+        font-size: 12vw;
+    }
+
+    .avatar-img{
+        margin-top: 2vh;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+}

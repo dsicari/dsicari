@@ -29,6 +29,11 @@
 ul{
     margin-block-start: 0;
     padding-inline-start: 1vw;
+    margin-bottom: 0;
+}
+
+.appear-when-mobile{
+    display: none;
 }
 
 @media only screen and (max-width: 800px) {    
@@ -46,6 +51,21 @@ ul{
         margin-top: 2vh;
         width: 100%;
         margin-bottom: 2vh;
+    }
+
+    .hobby-img{
+        /* PARA CROPAR IMG */
+        object-fit: cover;
+        width: 100%;
+        height: 100px;
+    }
+
+    .disappear-when-mobile{
+        display: none;
+    }    
+
+    .appear-when-mobile{
+        display: block;
     }
 
 }

@@ -47,43 +47,65 @@
 
             <!-- LINKS PAGE -->
             <div id="links" class="row mt-2">
-                <div class="col-1"></div>
-                <div class="col-2">
+                <div class="col-sm-1"></div>
+                <div class="col-4 col-sm-2">
                     <a href="#formacao" class="text-decoration-none cursor-pointer">
-                        <div class="link-big">
+                        <div id="formacao-link" class="link-big">
                             <span>formação</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-sm-2">
                     <a href="#xp" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>xp</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-sm-2">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
-                        <div class="link-big">
+                        <div id="skills-link" class="link-big">
                             <span>skills</span>                        
                         </div>
                     </a>
+                </div>  
+                <!-- DISAPPEAR WHEN MOBILE -->                        
+                <div class="col-sm-2 disappear-when-mobile">
+                    <a href="#hobbies" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>hobbies</span>                        
+                        </div>
+                    </a>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 disappear-when-mobile">
+                    <a href="#projetos" class="text-decoration-none cursor-pointer">
+                        <div class="link-big">
+                            <span>projetos</span>                        
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-1"></div>
+            </div>
+
+            <!-- LINKS PAGE WHEN MOBILE-->
+            <div id="links" class="row mt-2">
+                <!-- APPEAR WHEN MOBILE -->
+                <div class="col-2 appear-when-mobile"></div>
+                <div class="col-4 appear-when-mobile">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>hobbies</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-4 appear-when-mobile">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
                             <span>projetos</span>                        
                         </div>
                     </a>
                 </div>
-                <div class="col-1"></div>
             </div>
 
             <!-- FORMACAO -->
@@ -310,9 +332,14 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 description-item">                                    
-                                <img class="tech-image" src="assets/icon/technologies/flutter.svg">
+                                <!-- <img class="tech-image" src="assets/icon/technologies/flutter.svg">
                                 <img class="tech-image" src="assets/icon/technologies/mongodb.svg">
-                                <img class="tech-image" src="assets/icon/technologies/nodejs.svg">
+                                <img class="tech-image" src="assets/icon/technologies/nodejs.svg"> -->
+                                <ul>
+                                    <li>Flutter</li>
+                                    <li>MongoDB</li>
+                                    <li>Node JS</li>
+                                </ul>
                             </div>
                         </div> 
 
@@ -339,16 +366,16 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">                                        
-                                        <img class="img-fluid" src="http://placehold.it/300" alt="">
-                                        <div style="text-align: center;" class="description-item mt-2">Hobby</div>
+                                        <img class="hobby-img" src="http://placehold.it/300" alt="">
+                                        <div style="text-align: center;" class="description-item mt-1 mb-2">Hobby</div>
                                     </div>
                                     <div class="col-md-4">
-                                        <img class="img-fluid" src="http://placehold.it/300" alt="">
-                                        <div style="text-align: center;" class="description-item mt-2">Hobby</div>
+                                        <img class="hobby-img" src="http://placehold.it/300" alt="">
+                                        <div style="text-align: center;" class="description-item mt-1 mb-2">Hobby</div>
                                     </div>
                                     <div class="col-md-4">
-                                        <img class="img-fluid" src="http://placehold.it/300" alt="">
-                                        <div style="text-align: center;" class="description-item mt-2">Hobby</div>
+                                        <img class="hobby-img" src="http://placehold.it/300" alt="">
+                                        <div style="text-align: center;" class="description-item mt-1">Hobby</div>
                                     </div>
                                 </div>
                             </div>

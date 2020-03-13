@@ -141,6 +141,10 @@ hr{
         font-size: 4vh;
     }
 
+    .link-big{
+        font-size: 6vw;
+    }
+
     hr{
         height: 0.3vh;
         margin-top: 0;
