@@ -1,8 +1,9 @@
+<?php include_once("../init.php"); ?>
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a id="logo-navbar" class="nav-link" href="./home.php" class="text-decoration-none">
         <ul class="navbar-nav">
             <li class="nav-item">  
-                <img class="dsicari-logo align-top" src="./assets/icon/ovni_min.svg" width="60" height="60">          
+                <img class="dsicari-logo align-top" src="<?php echo($rootDirectory) ?>/assets/icon/ovni_min.svg" width="60" height="60">          
                 <span class="navbar-link dsicari-text-logo" href="#">
                     dsicari
                 </span>
@@ -15,19 +16,19 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="./home.php">Home</a>
+                <a class="nav-link" href="<?php echo($rootDirectory) ?>/home.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./projects.php">Projetos</a>
+                <a class="nav-link" href="<?php echo($rootDirectory) ?>/projects.php">Projetos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./about.php">Sobre</a>
+                <a class="nav-link" href="<?php echo($rootDirectory) ?>/about.php">Sobre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./archive.php">Arquivo</a>
+                <a class="nav-link" href="<?php echo($rootDirectory) ?>/archive.php">Arquivo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./contact.php">Contato</a>
+                <a class="nav-link" href="<?php echo($rootDirectory) ?>/contact.php">Contato</a>
             </li>
         </ul>
     </div>

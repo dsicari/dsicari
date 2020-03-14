@@ -1,9 +1,8 @@
 <html>
     <head>
         <?php
-            // lembrar que automaticamente esta importando widgets/head.php
-            // pois init esta incluindo head.php !!
-            include("../../../../../../init.php");           
+            include_once("../../../../../../init.php");       
+            include_once($rootDirectory."/templates/head.php");   
         ?>
 
         <link rel="stylesheet" href="<?php echo($rootDirectory) ?>/assets/css/post.css">

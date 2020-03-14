@@ -1,5 +1,6 @@
 <html>
     <head>
+        <?php include_once("./init.php"); ?>
         <?php include_once("templates/head.php"); ?>
         <link rel="stylesheet" href="./assets/css/projects.css">
     </head>

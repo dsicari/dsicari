@@ -17,5 +17,7 @@
         $rootDirectory="https://".$rootDirectory;
     }
 
-    include("templates/head.php");
+    //define('rootDirectory', $rootDirectory);
+    //$GLOBALS['rootDirectory']=$rootDirectory;
+
 ?>
