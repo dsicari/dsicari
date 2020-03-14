@@ -1,0 +1,30 @@
+# REFERENCIA: https://www.opentechguides.com/how-to/article/apache/115/htaccess-file-dir-security.html
+
+# Disable directory browsing
+Options -Indexes
+
+# Deny access to specific folder/file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .git>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files leia.txt>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .gitignore>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files README.md>
+    Order allow,deny
+    Deny from all
+</Files>

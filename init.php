@@ -17,7 +17,4 @@
         $rootDirectory="https://".$rootDirectory;
     }
 
-    //define('rootDirectory', $rootDirectory);
-    //$GLOBALS['rootDirectory']=$rootDirectory;
-
 ?>

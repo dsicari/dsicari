@@ -8,7 +8,7 @@
         echo(phpinfo());
     }
     else{
-       header("home.php"); 
-       exit();
+        header("Location: ".$rootDirectory."/home.php"); 
+        exit();
     }
 ?>
