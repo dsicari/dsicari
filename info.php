@@ -1,14 +1,14 @@
 <?php
     include_once("init.php");
-    //if(strpos($rootDirectory, "localhost") !== false || strpos($rootDirectory, "::1") !== false || strpos($rootDirectory, "127.0.0.1") !== false){
-        echo($rootDirectory."<br>");
-        echo($_SERVER['SERVER_ADDR']."<br>");
-        echo($_SERVER['SERVER_NAME']."<br>");
-        echo($_SERVER['SERVER_PORT']."<br>");
+    if(strpos($rootDirectory, "localhost") !== false){
+        echo("rootDirectory=".$rootDirectory."<br>");
+        echo("SERVER_ADDR=".$_SERVER['SERVER_ADDR']."<br>");
+        echo("SERVER_NAME=".$_SERVER['SERVER_NAME']."<br>");
+        echo("SERVER_PORT=".$_SERVER['SERVER_PORT']."<br>");
         echo(phpinfo());
-    //}
-    //else{
-    //    header("/home.php"); 
-    //    exit();
-    //}
+    }
+    else{
+       header("home.php"); 
+       exit();
+    }
 ?>
