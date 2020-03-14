@@ -26,7 +26,11 @@
 
     .avatar-img{
         margin-top: 2vh;
-        width: 100%;
         margin-bottom: 2vh;
+        /* PARA CROPAR IMAGEM */
+        object-fit: cover;
+        width: 100%;
+        height: 100px;
     }
+
 }

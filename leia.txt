@@ -1,0 +1,1 @@
+Habilitar allow_url_include=1 para poder importar URL absoluta nos arquivos.php
