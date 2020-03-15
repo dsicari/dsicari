@@ -27,7 +27,7 @@
                             <div class="col-12 col-md-3">
                                 <img class="avatar-img" src="https://via.placeholder.com/350">
                             </div>
-                            <div class="col-12 col-md-9">
+                            <div class="col-12 col-md-9" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
                                 <span class="title">Lorem ipsum dolor sit</span>
                                 <hr>
                                 <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
@@ -47,7 +47,7 @@
                             <div class="col-12 col-md-3">
                                 <img class="avatar-img" src="https://via.placeholder.com/350">
                             </div>
-                            <div class="col-12 col-md-9">
+                            <div class="col-12 col-md-9" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
                                 <span class="title">Lorem ipsum dolor sit</span>
                                 <hr>
                                 <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>

@@ -21,7 +21,7 @@
             <!-- ARQUIVO -->
             <div id="apresentacao" class="row">
                 <div class="col-1"></div>
-                <div class="col-10 content">
+                <div class="col-10 content" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
                     <div class="container-fluid presentation-box">
                         <div class="row">
                             <div class="col-md-12">
@@ -48,7 +48,7 @@
             <!-- ARQUIVO -->
             <div id="apresentacao" class="row">
                 <div class="col-1"></div>
-                <div class="col-10 content">
+                <div class="col-10 content" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
                     <div class="container-fluid presentation-box">
                         <div class="row">
                             <div class="col-md-12">
@@ -70,12 +70,12 @@
                     </div>
                 </div>
                 <div class="col-1"></div>
-            </div>
+            </div> 
 
             <!-- ARQUIVO -->
             <div id="apresentacao" class="row">
                 <div class="col-1"></div>
-                <div class="col-10 content">
+                <div class="col-10 content" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
                     <div class="container-fluid presentation-box">
                         <div class="row">
                             <div class="col-md-12">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-1"></div>
-            </div>
+            </div> 
 
         </div>        
     </body>

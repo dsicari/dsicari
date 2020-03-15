@@ -4,12 +4,27 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
+.header-lvl-2{
+    line-height: 1.1;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 2.5vw;
+}
+
+.table{
+    width: 90%;
+    margin-left: auto; 
+    margin-right:auto; 
+}
+
 .table-of-content{
-    list-style-type: none;
+    margin-left: 1vw;
+    /* list-style-type: none; */
     padding-inline-start: 0;
 }
 
 .table-of-content > li{
+    font-size: 1.4vw;
     font-weight: 700;
 }
 
@@ -18,15 +33,114 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-.subtitle-img{
+.subtitle-item{
     font-weight: 300;
     font-size: 1.3vw;
     font-style: italic;
     text-align: center;
 }
 
+.code-box{
+    width: 90%;
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 2px;
+    padding: 1vw !important;
+    border: 0.15vw solid var(--dracula-gray) !important;
+}
+
+/* Para numero de linha em todas as linhas */
+li.L0, li.L1, li.L2, li.L3,
+li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: decimal !important;
+}
+
+.callout{
+    width: 60%;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 1vw;
+    border-top: 0.15vw solid var(--dracula-gray);
+    border-right: 0.15vw solid var(--dracula-gray);
+    border-bottom: 0.15vw solid var(--dracula-gray);
+    background-color: white;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+
+.callout-default{
+    box-shadow: -0.6vw 0 0 0 #777;
+}
+
+.callout-green{
+    box-shadow: -0.6vw 0 0 0 var(--dracula-green);
+}
+
+.callout-red{
+    box-shadow: -0.6vw 0 0 0 var(--dracula-red);
+}
+
 @media only screen and (max-width: 800px) {
-    .subtitle-img{
+    .subtitle-item{
         font-size: 2vw;
+    }
+
+    .table-of-content{
+        display: none;
+    }
+
+    .date-archive{
+        font-size: 2.2vw;
+    }
+    
+    p.title{
+        margin-block-end: 0;
+    }
+
+    pre.code-box{
+        width: 100%;
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+
+    pre > ol{
+        padding-inline-start: 20px !important;
+    }
+
+    .header-lvl-2{
+        line-height: 1.0;
+        font-family: 'Roboto Slab';
+        font-weight: 300;
+        font-size: 5vw;
+        margin-bottom: 0.2rem;
+    }
+
+    .table{
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+
+    .callout{
+        width: 90%;
+        border-top: 0.5vw solid var(--dracula-gray);
+        border-right: 0.5vw solid var(--dracula-gray);
+        border-bottom: 0.5vw solid var(--dracula-gray);
+        font-weight: 400;
+        font-size: 2.5vw;
+    }
+
+    .callout-default{
+        box-shadow: -1.5vw 0 0 0 #777;
+    }
+    
+    .callout-green{
+        box-shadow: -1.5vw 0 0 0 var(--dracula-green);
+    }
+    
+    .callout-red{
+        box-shadow: -1.5vw 0 0 0 var(--dracula-red);
     }
 }

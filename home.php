@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="row row-subtitle">
-                <div class="col-sm-12">
-                    <a class="home-contact" href="./contact.php" class="text-decoration-none">contato</a>
+                <div class="col-sm-12" onclick="window.location.href = '<?php echo($rootDirectory); ?>/contact.php';">
+                    <span class="home-contact">contato</span>
                 </div>
             </div>
         </div>        
