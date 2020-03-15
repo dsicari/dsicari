@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="<?php echo($rootDirectory) ?>/assets/css/archive.css">
         <link rel="stylesheet" href="<?php echo($rootDirectory) ?>/assets/css/post.css">
 
+        <link rel="stylesheet" href="<?php echo($rootDirectory) ?>/assets/js/highlight/styles/darcula.css">
+        <script src="<?php echo($rootDirectory) ?>/assets/js/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
     </head>
 
     <?php include_once($rootDirectory."/widgets/navbar.php"); ?>
@@ -101,6 +105,14 @@
                                     nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
                                     mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
                                     aliquam nulla facilisi.</p>
+
+                                    <!-- https://highlightjs.org/usage/ https://github.com/google/code-prettify -->
+<pre><code class="c++">
+int i=0;
+void teste(i){
+    foo();
+}
+</code></pre>
 
                                 </article>
                             </div>
