@@ -3,11 +3,6 @@
         <?php
             include_once("../../../../../../init.php");       
             include_once($rootDirectory."/templates/head.php");  
-            echo("rootDirectory=".$rootDirectory."<br>");
-            echo($rootDirectory."/templates/head.php"."<br>"); 
-            echo($rootDirectory."/assets/css/archive.css"."<br>");
-            echo($rootDirectory."/assets/css/post.css"."<br>");
-            echo($rootDirectory."/widgets/navbar.php"."<br>");
         ?>
 
         <link rel="stylesheet" href="<?php echo($rootDirectory) ?>/assets/css/archive.css">

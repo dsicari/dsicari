@@ -3,3 +3,6 @@ Habilitar allow_url_include=1 para poder importar URL absoluta nos arquivos.php
 Para desabilitar warnings
 ;error_reporting=E_ALL & ~E_DEPRECATED & ~E_STRICT
 error_reporting=E_ALL & ~E_WARNING & ~E_NOTICE
+
+DSICARI PHP.INI
+/etc/php/7.2/apache2/php.ini
