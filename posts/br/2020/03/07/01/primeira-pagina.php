@@ -51,22 +51,20 @@
 
             <!-- CORPO POST -->
             <div id="corpo-post" class="row">
-                <div class="col-1"></div>
-                <div class="col-10 content">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 content">
                     <div class="container-fluid presentation-box">
                         <div class="row">
 
                             <!-- TABLE OF CONTENTS -->
-                            <div class="col-sm-2">
-                                <ul class="table-of-content">
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Pellentesque eu tincidunt tortor</li>
-                                    <li>Et malesuada fames ac turpis egestas</li>
-                                </ul>
+                            <div class="col-sm-2 all-titles">
+                                <!-- SERA INJETADO VIA JAVASCRIPT -->
+                                <!-- Cada .title sera lista aqui, organizar como id=section-1, id=section-2, ... -->
                             </div>
 
                             <!-- POST -->
-                            <div class="col-12 col-sm-10">
+                            
+                            <div class="col-12 col-sm-10 post-article">
                                 <article>
                                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                     ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
@@ -89,7 +87,7 @@
                                     mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
                                     aliquam nulla facilisi.</p>
 
-                                    <p class="title">Teste</p>
+                                    <p id="section-1" class="title">Teste de titulo</p>
                                     <hr>
 
                                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -123,7 +121,7 @@ public:
                                     mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
                                     aliquam nulla facilisi.</p>
 
-                                    <p class="title">Teste 2</p>
+                                    <p id="section-2" class="title">Teste 2 de titulo maior e bem legal</p>
                                     <hr>
 
                                     <p class="header-lvl-2">Header</p>
@@ -213,5 +211,6 @@ public:
     </body>
 
     <?php include_once($rootDirectory."/templates/footer.php"); ?>
+    <script src="<?php echo($rootDirectory) ?>/assets/js/tableOfContent.js"></script>
 
 </html>

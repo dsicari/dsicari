@@ -18,14 +18,28 @@
 }
 
 .table-of-content{
-    margin-left: 1vw;
+    /* margin-left: 0.3vw; */
     /* list-style-type: none; */
     padding-inline-start: 0;
+    font-size: 1.4vw;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
 }
 
-.table-of-content > li{
-    font-size: 1.4vw;
-    font-weight: 700;
+.table-of-content > ul {
+    list-style-type: none;
+    padding-inline-start: 1vw;
+}
+
+
+.link-table-of-content{  
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: var(--dracula-selection);
+}
+
+.link-table-of-content:hover{
+    color: var(--dracula-comment);
 }
 
 .post-img{
@@ -84,6 +98,17 @@ li.L5, li.L6, li.L7, li.L8 {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .post-article{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     .subtitle-item{
         font-size: 2vw;
     }
