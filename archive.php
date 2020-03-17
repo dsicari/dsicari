@@ -18,86 +18,63 @@
                 <div class="col-sm-5 col-lg-1"></div>
             </div>
 
+            <?php                       
+                $posts = getDirContents("posts".DIRECTORY_SEPARATOR."br");
+                //var_dump(getDirContents("posts".DIRECTORY_SEPARATOR."br"));
+            ?>
+
             <!-- ARQUIVO -->
-            <div id="apresentacao" class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
-                    <div class="container-fluid content cursor-pointer">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <span class="title">Lorem ipsum dolor sit</span>
-                                <hr>
-                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+            <?php 
+                foreach($posts as $postDir) { 
+                    $str = file_get_contents($postDir.DIRECTORY_SEPARATOR."post.json");
+                    $post = json_decode($str, true);                  
+
+                    // Get {post_file}.php to link
+                    $d = dir($postDir);
+                    $filename="";
+                    while (false !== ($entry = $d->read())) {                        
+                        if(strpos($entry ,".php") !== false){
+                            $filename=$postDir.DIRECTORY_SEPARATOR.$entry;
+                        }
+                    }
+                    // TODO, if filename dont exists show error page NOT FOUND
+
+                    // Get tag, to know if its project/archive/...
+                    if(in_array('project', $post['tag']) == true){
+                        // If find 'project' in tags, continue to next item on foreach
+                        continue;
+                    }
+            ?> 
+
+                <div id="apresentacao" class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
+                        <div class="container-fluid content cursor-pointer">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="title"><?php echo($post['title']) ?></span>
+                                    <hr>
+                                    <span class="text"><?php echo($post['subtitle']) ?></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-4 date-archive">
-                                <span><b>22 de janeiro de 2020</b></span>
-                            </div>
-                            <div class="col-md-8 badges">
-                                <span class="badge badge-warning">Warning</span>
-                                <span class="badge badge-info">Info</span>
-                                <span class="badge badge-dark">Dark</span>
+                            <div class="row mt-2">
+                                <div class="col-md-4 date-archive">
+                                    <span><b><?php echo(getDateFromPostDirectory($postDir)); ?></b></span>
+                                </div>
+                                <div class="col-md-8 badges">
+                                    <?php 
+                                        foreach($post['badges'] as $b){
+                                            echo("<span class=\"badge badge-dark\">".$b."</span>");
+                                        } 
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-1"></div>
-            </div> 
+                    <div class="col-sm-1"></div>
+                </div> 
             
-            <!-- ARQUIVO -->
-            <div id="apresentacao" class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
-                    <div class="container-fluid content cursor-pointer">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <span class="title">Lorem ipsum dolor sit</span>
-                                <hr>
-                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-4 date-archive">
-                                <span><b>22 de janeiro de 2020</b></span>
-                            </div>
-                            <div class="col-md-8 badges">
-                                <span class="badge badge-warning">Warning</span>
-                                <span class="badge badge-info">Info</span>
-                                <span class="badge badge-dark">Dark</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-1"></div>
-            </div> 
-            
-            <!-- ARQUIVO -->
-            <div id="apresentacao" class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
-                    <div class="container-fluid content cursor-pointer">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <span class="title">Lorem ipsum dolor sit</span>
-                                <hr>
-                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-4 date-archive">
-                                <span><b>22 de janeiro de 2020</b></span>
-                            </div>
-                            <div class="col-md-8 badges">
-                                <span class="badge badge-warning">Warning</span>
-                                <span class="badge badge-info">Info</span>
-                                <span class="badge badge-dark">Dark</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-1"></div>
-            </div> 
+            <?php } ?>            
 
         </div>        
     </body>
