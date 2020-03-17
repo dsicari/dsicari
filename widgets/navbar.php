@@ -2,7 +2,7 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a id="logo-navbar" class="nav-link" href="./home.php" class="text-decoration-none">
         <ul class="navbar-nav">
-            <li class="nav-item">  
+            <li class="nav-item">
                 <img class="dsicari-logo align-top" src="<?php echo($rootDirectory) ?>/assets/icon/ovni_min.svg" width="60" height="60">          
                 <span class="navbar-link dsicari-text-logo" href="#">
                     dsicari

@@ -20,14 +20,14 @@
 
             <!-- ARQUIVO -->
             <div id="apresentacao" class="row">
-                <div class="col-1"></div>
-                <div class="col-10 content" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
-                    <div class="container-fluid presentation-box">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
+                    <div class="container-fluid content">
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="title">Lorem ipsum dolor sit</span>
                                 <hr>
-                                <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -42,19 +42,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
+                <div class="col-sm-1"></div>
             </div> 
             
             <!-- ARQUIVO -->
             <div id="apresentacao" class="row">
-                <div class="col-1"></div>
-                <div class="col-10 content" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
-                    <div class="container-fluid presentation-box">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
+                    <div class="container-fluid content">
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="title">Lorem ipsum dolor sit</span>
                                 <hr>
-                                <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -69,19 +69,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
+                <div class="col-sm-1"></div>
             </div> 
-
+            
             <!-- ARQUIVO -->
             <div id="apresentacao" class="row">
-                <div class="col-1"></div>
-                <div class="col-10 content" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
-                    <div class="container-fluid presentation-box">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
+                    <div class="container-fluid content">
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="title">Lorem ipsum dolor sit</span>
                                 <hr>
-                                <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
+                <div class="col-sm-1"></div>
             </div> 
 
         </div>        
