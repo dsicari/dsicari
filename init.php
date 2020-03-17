@@ -1,7 +1,7 @@
 <?php
     $rootDirectory="";
 
-    if($_SERVER['SERVER_NAME'] == "localhost"){
+    if($_SERVER['SERVER_NAME'] == "localhost" || strpos($_SERVER['SERVER_NAME'], "192.168") !== false){
         // develop
         $rootDirectory=$_SERVER['SERVER_NAME']."/dsicari";
     }
