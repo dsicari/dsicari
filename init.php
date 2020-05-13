@@ -39,4 +39,10 @@
         return utf8_encode(strftime("%A, %d de %B de %Y", strtotime($strDate)));
     }
 
+    function getDateFromPostUrl($dir){
+        $temp = explode("/", $dir);
+        $strDate = $temp[sizeof($temp)-3]."/".$temp[sizeof($temp)-2]."/".$temp[sizeof($temp)-4];
+        return utf8_encode(strftime("%A, %d de %B de %Y", strtotime($strDate)));
+    }
+
 ?>

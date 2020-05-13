@@ -43,7 +43,7 @@
                     // TODO, if filename dont exists show error page NOT FOUND
 
                     // Get tag, to know if its project/archive/...
-                    if(in_array('project', $post['tag']) == false){
+                    if(in_array('project', $post['tags']) == false){
                         // If didnt find 'project' in tags, continue to next item on foreach
                         continue;
                     }
@@ -54,10 +54,10 @@
                     <div class="col-sm-10 content-box">
                         <div class="container-fluid content">
                             <div class="row"> 
-                                <div class="col-12 col-md-3">
-                                    <img class="avatar-img" src="<?php echo($postDir.DIRECTORY_SEPARATOR.$post['image']) ?>">
-                                </div>
-                                <div class="col-12 col-md-9 my-auto cursor-pointer" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
+                                <!-- <div class="col-12 col-md-3">
+                                    <img class="avatar-img" src="<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$postDir.DIRECTORY_SEPARATOR.$post['image'])) ?>">
+                                </div> -->
+                                <div class="col-12 col-md-12 my-auto cursor-pointer" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
                                     <span class="title"><?php echo($post['title']) ?></span>
                                     <hr>
                                 </div>

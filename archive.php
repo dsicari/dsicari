@@ -40,7 +40,7 @@
                     // TODO, if filename dont exists show error page NOT FOUND
 
                     // Get tag, to know if its project/archive/...
-                    if(in_array('project', $post['tag']) == true){
+                    if(in_array('project', $post['tags']) == true){
                         // If find 'project' in tags, continue to next item on foreach
                         continue;
                     }
