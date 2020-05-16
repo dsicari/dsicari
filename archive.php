@@ -3,6 +3,7 @@
         <?php include_once("./init.php"); ?>
         <?php include_once("templates/head.php"); ?>
         <link rel="stylesheet" href="./assets/css/archive.css">
+        <link rel="stylesheet" href="./assets/css/post.css">
     </head>
 
     <?php include_once("widgets/navbar.php"); ?>
@@ -12,7 +13,7 @@
 
             <div class="row mb-4">
                 <div class="col-sm-2 col-lg-1"></div>
-                <div class="col-sm-5 col-lg-10 title-cover-home">
+                <div class="col-sm-5 col-lg-10 title-cover">
                     Arquivo                               
                 </div>
                 <div class="col-sm-5 col-lg-1"></div>

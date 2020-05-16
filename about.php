@@ -3,6 +3,7 @@
         <?php include_once("./init.php"); ?>
         <?php include_once("templates/head.php"); ?>
         <link rel="stylesheet" href="./assets/css/about.css">
+        <link rel="stylesheet" href="./assets/css/post.css">
     </head>
 
     <?php include_once("widgets/navbar.php"); ?>
@@ -12,7 +13,7 @@
 
             <div class="row">
                 <div class="col-md-2 col-lg-1"></div>
-                <div class="col-md-5 col-lg-10 title-cover-home">
+                <div class="col-md-5 col-lg-10 title-cover">
                     Who's bad                                 
                 </div>
                 <div class="col-md-5 col-lg-1"></div>
@@ -20,7 +21,7 @@
 
             <div class="row">
                 <div class="col-md-1 col-lg-1"></div>
-                <div class="subtitle-cover-home float-right col-md-10 col-lg-10">
+                <div class="subtitle-cover float-right col-md-10 col-lg-10">
                     Bad - Jackson, Michael
                 </div>
                 <div class="col-md-1 col-lg-1"></div>
@@ -33,12 +34,12 @@
                     <div class="container-fluid content">
                         <div class="row">
                             <div class="col-12 col-md-3">
-                                <img class="avatar-img" src="https://via.placeholder.com/350">
+                                <img class="avatar-img" src="assets/img/foto_perfil.jpg">
                             </div>
                             <div class="col-12 col-md-9">
-                                <span class="title">Lorem ipsum dolor sit</span>
+                                <span class="title">Danilo de Nadai Sicari</span>
                                 <hr>
-                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                                <span class="text">Nascido em 1990 e criado com muito sucrilhos no prato, acredita fielmente no poder da internet e que se alguém foi capaz de fazer, outro alguém também fará. Iniciou carreira em uma distribuidora de equipamentos industriais e uns tantos anos depois resolveu pular a cerca e foi para a área de TI, a qual tinha por hobby. Hoje, o hobby é outro, curte cortar madeira, tocar bateria e fazer download de imagens metereológicas de satélites no quintal de sua avó.</span>
                             </div>
                         </div>
                     </div>
@@ -125,16 +126,15 @@
                         <!-- CURSO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Curso</span>
+                                <span>Tecnologia em Sistemas para Internet</span>
                             </div>  
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12 description-item">                                    
                                 <span>
-                                    <b>Informação Instituição</b>
-                                    <br>Local
-                                    <br>Ano Conclusão
-                                    <br>LINK INSTITUICAO
+                                    <b>FATEC - Faculdade de Tecnologia</b>
+                                    <br>Araras/SP, conclusão jun/2020
+                                    <br>https://www.fatecararas.com.br/
                                 </span>
                             </div>
                         </div>    
@@ -142,16 +142,15 @@
                         <!-- CURSO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Curso</span>
+                                <span>Licenciatura Matemática</span>
                             </div>  
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12 description-item">                                    
                                 <span>
-                                    <b>Informação Instituição</b>
-                                    <br>Local
-                                    <br>Ano Conclusão
-                                    <br>LINK INSTITUICAO
+                                    <b>UFSCAR - Universidade Federal de São Carlos</b>
+                                    <br>Sorocaba/SP, Cursado até o 3o ano
+                                    <br>https://www.sorocaba.ufscar.br/
                                 </span>
                             </div>
                         </div> 
@@ -159,19 +158,67 @@
                         <!-- CURSO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Curso</span>
+                                <span>Pós-graduação Lato Sensu Gestão de Projetos e Negócios</span>
                             </div>  
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12 description-item">                                    
                                 <span>
-                                    <b>Informação Instituição</b>
-                                    <br>Local
-                                    <br>Ano Conclusão
-                                    <br>LINK INSTITUICAO
+                                    <b>FACENS - Faculdade de Engenharia de Sorocaba</b>
+                                    <br>Sorocaba/SP, 2015
+                                    <br>https://www.facens.br/home
                                 </span>
                             </div>
                         </div> 
+
+                        <!-- CURSO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Bacharelado Engenharia Elétrica</span>
+                            </div>  
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>FACENS - Faculdade de Engenharia de Sorocaba</b>
+                                    <br>Sorocaba/SP, 2013
+                                    <br>https://www.facens.br/home
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- CURSO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Tecnologia em Eletrônica</span>
+                            </div>  
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>FATEC - Faculdade de Tecnologia</b>
+                                    <br>Tatuí/SP, 2010
+                                    <br>https://www.fatectatui.edu.br/
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- CURSO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>Técnico em Informática</span>
+                            </div>  
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12 description-item">                                    
+                                <span>
+                                    <b>ETEC - Escola Tecnica</b>
+                                    <br>Tatuí/SP, 2008
+                                    <br>https://www.etecsalesgomes.com.br/
+                                </span>
+                            </div>
+                        </div> 
+
                     </div>
                 </div>                
                 <div class="col-1"></div>
@@ -193,53 +240,54 @@
                         <!-- EXPERIENCIA -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Empresa</span>
+                                <span>CI&T Software</span>
                             </div>  
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12 description-item">                                    
                                 <span>
-                                    <b>Cargo</b>
-                                    <br>Periodo
-                                    <br>Descrição Cargo
-                                    <br>LINK EMPRESA
+                                    <b>Estagiário Desenvolvimento de Software</b>
+                                    <br><span class="periodo">fev/2020 - atual</span>
+                                    <br><br>Desenvolvedor atuando junto a squad, analisando e propondo melhorias, buscando agregar performance e vazão de entrega ao time. Atualmente trabalhando em frontend com REACTJS e backend com JAVA (SPRINGBOOT), persistindo dados em banco de dados relacional e não relacional.
+                                    <br><a href="https://br.ciandt.com/" target="_blank">br.ciandt.com</a>
                                 </span>
                             </div>
-                        </div>    
+                        </div>                           
 
                         <!-- EXPERIENCIA -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Empresa</span>
+                                <span>PLDevice - Tecnologia em Computadores</span>
                             </div>  
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12 description-item">                                    
                                 <span>
-                                    <b>Cargo</b>
-                                    <br>Periodo
-                                    <br>Descrição Cargo
-                                    <br>LINK EMPRESA
+                                    <b>Gerente de Pesquisa e Desenvolvimento</b>
+                                    <br><span class="periodo">abr/2017 - jan/2020</span>
+                                    <br><br>Pesquisa e desenvolvimento de novas tecnologias, fornecedores e técnicas agregando valor as operações da empresa.Conhecimento em smartcards, mifare, EMV e protocolos de transação financeira. Desenvolvimento de firmware para microcontroladores ATMEL, software para ambiente Windows, esquemas elétricos e placas de circuito impresso.
+                                    <br><a href="http://www.pldevice.com.br/" target="_blank">pldevice.com.br</a>
                                 </span>
                             </div>
                         </div> 
 
-                        <!-- EXPERIENCIA -->
-                        <div class="row">
+                         <!-- EXPERIENCIA -->
+                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Empresa</span>
+                                <span>INFRATEMP – Instrumentos de Medição e Controle LTDA</span>
                             </div>  
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12 description-item">                                    
                                 <span>
-                                    <b>Cargo</b>
-                                    <br>Periodo
-                                    <br>Descrição Cargo
-                                    <br>LINK EMPRESA
+                                    <b>Engenheiro de Desenvolvimento C</b>
+                                    <br><span class="periodo">abr/2012 - abr/2017</span>
+                                    <br><br>Aplicação de sistemas cftv e medição de temperatura sem contato para indústria em geral. Projeto elétrico e mecânico, visita a cliente, start up de sistemas, contato direto com fornecedores, suporte técnico, elaboração de manuais, compras e gerenciamento do portfólio de produtos da engenharia.
+                                    <br><a href="https://www.infratemp.com.br/" target="_blank">infratemp.com.br</a>
                                 </span>
                             </div>
                         </div> 
+
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
@@ -274,7 +322,8 @@
                                 <ul>
                                     <li>Java</li>
                                     <li>Spring</li>
-                                    <li>Hibernate</li>
+                                    <li>DynamoDB</li>
+                                    <li>ReactJS</li>
                                     <li>MySql</li>
                                     <li>Docker</li>
                                 </ul>
@@ -403,14 +452,14 @@
                         <!-- PROJETO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Projeto</span>
+                                <span>PETFEEDER</span>
                             </div>  
                         </div>
                         <div class="row">
-                            <div class="col-md-12 description-item">                                    
+                            <div class="col-md-12 description-item mb-3">                                    
                                 <span>
-                                    Descrição
-                                    <br>LINK EMPRESA
+                                    Alimentador automático para pets que possui balança para pesagem do alimento, webcam para visualização do pet e pagina web para configuração e interação com o alimentador. Responsável pelo desenvolvimento do design mecânico, firmware e servidor utilizando C++. 
+                                    <br><a href="https://www.youtube.com/watch?v=MZubIsdSAlw" target="_blank">vídeo</a>
                                 </span>
                             </div>
                         </div>    
@@ -418,14 +467,15 @@
                         <!-- PROJETO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Projeto</span>
+                                <span>EMPODERAMENTO INTERGALÁTICO DO RADIOAMADORISMO UTILIZANDO PYTHON</span>
                             </div>  
                         </div>
                         <div class="row">
-                            <div class="col-md-12 description-item">                                    
+                            <div class="col-md-12 description-item mb-3">                                    
                                 <span>
-                                    Descrição
-                                    <br>LINK EMPRESA
+                                    Como python e radioamadorismo enviam imagens para o espaço? Uma conversa breve sobre o assunto durante o CAIPYRA 2019
+                                    <br><a href="https://youtu.be/_aOLxoQESIA" target="_blank">vídeo CAIPYRA 2019</a>
+                                    <br><a href="https://drive.google.com/file/d/0BwSGDpqawMkKSUNibmVCN2k0SnluMW1BVm1xTS14ajM5T0xB/view?usp=sharing" target="_blank">matéria Jornal Opnião, pag. 3</a>
                                 </span>
                             </div>
                         </div> 
@@ -433,17 +483,79 @@
                         <!-- PROJETO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
-                                <span>Projeto</span>
+                                <span>HOMEPAGE CEPINTANDO 7</span>
                             </div>  
                         </div>
                         <div class="row">
-                            <div class="col-md-12 description-item">                                    
+                            <div class="col-md-12 description-item mb-3">                                    
                                 <span>
-                                    Descrição
-                                    <br>LINK EMPRESA
+                                    Desenvolvimento e hospedagem da homepage do Centro Educacional Pintando 7
+                                    <br><a href="https://www.cepintando7.com.br/" target="_blank">homepage</a>
                                 </span>
                             </div>
                         </div> 
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>RADIOAMADOR – PU2WAV</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item mb-3">                                    
+                                <span>
+                                    Radioamador classe C, indicativo PU2WAV, para operação em todo território do Brasil, aprovado em 2018 (ANATEL – São Paulo). Interesse e projetos com recepção de imagens via satélite, comunicação digital, SSTV, python para radioamadorismo, participação de contestes nacionais e internacionais, DX na banda de 10m preferencialmente para contatos internacionais
+                                    <br><a href="https://sistemas.anatel.gov.br/easp/Novo/ConsultaIndicativo/Tela.asp" target="_blank">consultar indicativo</a>
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>RADIOAMADOR – KC1KRX</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item mb-3">                                    
+                                <span>
+                                    Radioamador classe Technician, indicativo KC1KRX, para operação em todo território dos Estados Unidos da América, aprovado em 2018 (MIT – Massachusetts)
+                                    <br><a href="http://www.arrl.org/advanced-call-sign-search" target="_blank">consultar indicativo</a>
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>DAILY TIMELAPSE</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item mb-3">                                    
+                                <span>
+                                    Timelapse diário de Cerquilho/SP e Araras/SP sendo postadas no twitter. Projeto feito em python. No momento offline por mudança de endereço.
+                                    <br><a href="https://twitter.com/dsicariii" target="_blank">twitter</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
+                                <span>OXIMETRO DE PULSO SEM FIO</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item mb-3">                                    
+                                <span>
+                                    Interface entre dispositivos médicos não invasivos para transferir informações de taxa de oxigenação do sangue, batimento cardíaco e pressão arterial via internet para um computador pessoal, possibilitando um profissional da saúde realizar exames online de seu paciente e em tempo real, sem a necessidade de contato pessoal.
+                                    <br><a href=">http://g1.globo.com/sao-paulo/sorocaba-jundiai/noticia/2013/01/universitario-cria-oximetro-de-pulsosem-fio-em-sorocaba-sp.html" target="_blank">matéria G1</a>
+                                </span>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
                 <div class="col-sm-1"></div>

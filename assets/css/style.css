@@ -60,7 +60,6 @@ body{
 .content-box{
     margin-top: 3vh;
     border-radius: 1vw;
-    /* box-sizing: border-box; ??? */
     border: 0.4vw solid var(--dracula-selection);
     background-color: var(--dracula-foreground);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -73,18 +72,17 @@ body{
     padding-right: 2vw;
 }
 
-.title{
-    line-height: 1.1;
-    font-family: 'Roboto Slab';
-    font-weight: 400;
-    font-size: 4vw;
+.title-cover{    
+    line-height: 1.4;
+    font-family: 'Roboto Slab';    
+    font-size: 7.5vw;
+    font-weight: 700;
 }
 
-.text{
-    line-height: 1.3;
-    font-family: 'Roboto Slab';
-    font-weight: 300;
+.subtitle-cover{
+    font-family: 'Roboto Condensed';
     font-size: 1.5vw;
+    font-weight: bold;    
 }
 
 ul.text{
@@ -114,25 +112,10 @@ ul.text{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-.header-lvl-2{
-    line-height: 1.1;
-    font-family: 'Roboto Slab';
-    font-weight: 300;
-    font-size: 2.5vw;
-}
-
-.header-lvl-3{
-    line-height: 1.1;
-    font-family: 'Roboto Slab';
-    font-weight: 300;
-    font-size: 2vw;
-    margin-left: 2vw;
-}
-
-hr{
-    color: var(--dracula-gray);
-    background-color: var(--dracula-gray);
-    height: 1.2vh;
+.badge{
+    font-size: 1vw;
+    float: right;
+    margin-right: 0.5vw;
 }
 
 .cursor-pointer{
@@ -144,8 +127,6 @@ hr{
     font-size: 3.3vw;
     font-weight: 700;
 }
-
-/* ------------ GO TOP BUTTON ------------ */
 
 .go-top-button{
     font-family: 'Roboto Slab';
@@ -169,13 +150,7 @@ hr{
 
     .link-big{
         font-size: 6vw;
-    }
-
-    hr{
-        height: 0.3vh;
-        margin-top: 0;
-        margin-bottom: 0.2rem;
-    }
+    }    
 
     .content-box{
         padding-top: 2vh;
@@ -187,19 +162,31 @@ hr{
     .content{
         padding: 0;
     }
-
-    .title{
-        font-size: 6vw;
+    
+    .title-cover{ 
+        margin-top: 5%;
+        line-height: 1.1;
+        font-size: 12vw;
     }
 
-    .text{
-        font-size: 4vw;
-    }
+    .subtitle-cover{
+        font-size: 5vw;
+    }    
 
     ul.text{
         margin-inline-start: 2vw;
         line-height: 1.5;
         font-size: 3.52vw;
+    }
+
+    .badge{
+        font-size: 2.5vw;
+        float: right;
+        margin-right: 0.5vw;
+    }
+
+    .badges{
+        margin-top: 5px;
     }
 
     .list-box .title-item{
@@ -214,15 +201,7 @@ hr{
         margin-top: 10px;
         margin-right: 25px;
         width: 8vw;
-    }
-
-    .header-lvl-2{
-        line-height: 1.0;
-        font-family: 'Roboto Slab';
-        font-weight: 300;
-        font-size: 5vw;
-        margin-bottom: 0.2rem;
-    }
+    }    
 
     .go-top-button{
         font-size: 4vw;

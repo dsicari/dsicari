@@ -216,27 +216,42 @@
 <!-- https://github.com/google/code-prettify -->
 <pre class="prettyprint linenums code-box">
 typedef struct{
-    unsigned char iniciador; // Os pacotes sempre se iniciam com STX
-    unsigned char modo; // 0: plaintext 1: criptografado
+    // Os pacotes sempre se iniciam com STX
+    unsigned char iniciador; 
+    // 0: plaintext 1: criptografado
+    unsigned char modo;
 }TPacketInit;
 
 typedef struct{
-    char sign[10]; // Assinatura do pacote, conhecido pelo cliente e servidor
-    unsigned char id; // Tipo do pacote sendo enviado
-    unsigned long seq; // Sequencia do pacote
-    unsigned char st; // Status do alimentador 0: OK, 1: em erro
-    char sn[10]; // Numero de serie do alimentador
+    // Assinatura do pacote, conhecido pelo 
+    // cliente e servidor
+    char sign[10];
+    // Tipo do pacote sendo enviado
+    unsigned char id;
+    // Sequencia do pacote
+    unsigned long seq;
+    // Status do alimentador 0: OK, 1: em erro
+    unsigned char st; 
+    // Numero de serie do alimentador
+    char sn[10];
 }TPacketID;
 
 typedef struct{
     TPacketInit init;
     TPacketID pid;
-    unsigned long uptime; // Tempo que alimentador esta ligado
-    unsigned short nivel_alm; // Nivel de alimento disponivel
-    unsigned short peso; // Peso do pote de comida
-    char horario_alm[24]; // Horarios de alimentação, no maximo 4
-    unsigned short qtde_alm; // Quantidade de alimento a ser colocado no evento
-    unsigned short crc; // Bytes de validação do pacote
+    // Tempo que alimentador esta ligado
+    unsigned long uptime; 
+    // Nivel de alimento disponivel
+    unsigned short nivel_alm; 
+    // Peso do pote de comida
+    unsigned short peso; 
+    // Horarios de alimentação, no maximo 4
+    char horario_alm[24];
+    // Quantidade de alimento a ser colocado 
+    // no evento
+    unsigned short qtde_alm;
+    // Bytes de validação do pacote
+    unsigned short crc; 
 }TPacketReport;
 </pre>
 </div>
@@ -248,7 +263,8 @@ typedef struct{
 <!-- https://github.com/google/code-prettify -->
 <pre class="prettyprint linenums code-box">
 CREATE TABLE `incoming` (
-	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `id` INT(10) UNSIGNED NOT NULL 
+        AUTO_INCREMENT,
 	`token` INT(10) UNSIGNED NOT NULL,
 	`datahora` DATETIME NOT NULL,
 	`pid` INT(11) NOT NULL,
@@ -271,16 +287,20 @@ CREATE TABLE `incoming` (
 <!-- https://github.com/google/code-prettify -->
 <pre class="prettyprint linenums code-box">
 CREATE TABLE `outgoing` (
-	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `id` INT(10) UNSIGNED NOT NULL 
+        AUTO_INCREMENT,
 	`sn_device` VARCHAR(10) NOT NULL,
 	`datahora_insert` DATETIME NOT NULL,
 	`cmd` INT(11) NOT NULL,
 	`valor` VARCHAR(30) NOT NULL,
-	`datahora_realizado` DATETIME NULL DEFAULT NULL,
+    `datahora_realizado` DATETIME NULL 
+        DEFAULT NULL,
 	`realizado` INT(11) NULL DEFAULT NULL,
 	PRIMARY KEY (`id`),
 	INDEX `FK_SN_DEVICE` (`sn_device`),
-	CONSTRAINT `FK_SN_DEVICE` FOREIGN KEY (`sn_device`) REFERENCES `device` (`sn`)
+    CONSTRAINT `FK_SN_DEVICE`
+        FOREIGN KEY (`sn_device`)
+        REFERENCES `device` (`sn`)
 );
 </pre>
 </div>
@@ -292,11 +312,17 @@ CREATE TABLE `outgoing` (
 <pre class="prettyprint linenums code-box">
 typedef struct{
 	TPacketInit init;
-	TPacketID pid;
-	unsigned long int idCmd; // Chave primária da linha em que foi gerado o comando no banco de dados
-	int cmd; // Comando a ser executado
-	char valor[30]; // Valor do comando
-	unsigned short crc; // Bytes de validação do pacote
+    TPacketID pid;
+    // Chave primária da linha em que 
+    // foi gerado o comando no 
+    // banco de dados
+    unsigned long int idCmd; 
+    // Comando a ser executado
+    int cmd; 
+    // Valor do comando
+	char valor[30]; 
+    // Bytes de validação do pacote
+    unsigned short crc;    
 }TPacketResponse;
 </pre>
 </div>
@@ -309,12 +335,17 @@ typedef struct{
 <!-- https://github.com/google/code-prettify -->
 <pre class="prettyprint linenums code-box">
 typedef struct{
-	TPacketInit init;
-	TPacketID pid;
-	unsigned long int idCmd; // Rertorna a chave primaria recebida
-	int cmd; // Retorna o comando recebido
-	int cmdStatus; // 0: Comando executado 1: Comando não executado
-	unsigned short crc; // Bytes de validação do pacote
+    TPacketInit init;
+    TPacketID pid;
+    // Rertorna a chave primaria recebida
+    unsigned long int idCmd;
+    // Retorna o comando recebido 
+    int cmd;
+    // 0: Comando executado 
+    // 1: Comando não executado
+    int cmdStatus;
+    // Bytes de validação do pacote 
+	unsigned short crc;
 }TPacketCmdResponse;
 </pre>
 </div>
@@ -364,142 +395,13 @@ CREATE TABLE `device` (
                                     <p class="text">Os horários de alimentação, quantidade de comida a ser colocada e número de sequência de pacote são
                                          gravados na memória EEPROM do Arduino para que as informações não se percam quando houver falta de energia.</p>
 
-                                    
-
-
-
-
-                                    <img class="post-img rounded mx-auto d-block" src="img/esquilo.jpg">
-                                    <p class="subtitle-item">descricao imagem</p>
-
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <p id="section-1" class="title">Teste de titulo</p>
-                                    <hr>
-
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-                                    
-<div>
-<!-- https://github.com/google/code-prettify -->
-<pre class="prettyprint linenums code-box">
-class Voila {
-public:
-  // Voila
-  static const string VOILA = "Voila";
-
-  // will not interfere with embedded <a href="#voila2">tags</a>.
-}</pre>
-</div>
-                                    <p class="subtitle-item">descricao codigo</p>
-
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <p id="section-2" class="title">Teste 2 de titulo maior e bem legal demais da conta</p>
-                                    <hr>
-
-                                    <p class="header-lvl-2">Header</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <p class="header-lvl-2">Header</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <div class="table-responsive mt-4">
-                                        <table class="table table-striped table-bordered shadow-sm">
-                                            <thead class="thead-dark">
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">First</th>
-                                                    <th scope="col">Last</th>
-                                                    <th scope="col">Handle</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <p class="subtitle-item">descricao tabela</p>
-
-                                    <p class="header-lvl-2">Header</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero 
-                                    nunc consequat. Et malesuada fames ac turpis egestas sed tempus urna et. Massa enim nec dui nunc 
-                                    mattis enim. Amet mattis vulputate enim nulla aliquet porttitor. Pellentesque eu tincidunt tortor 
-                                    aliquam nulla facilisi.</p>
-
-                                    <div class="callout callout-default">
-                                        <b>Callout</b>
-                                        <br>This is a callout
-                                    </div>
-
-                                    <div class="callout callout-green">
-                                        <b>Callout</b>
-                                        <br>This is a callout
-                                    </div>
-
-                                    <div class="callout callout-red">
-                                        <b>Callout</b>
-                                        <br>This is a callout
-                                    </div>
-
                                 </article>
                             </div>
 
                         </div>
                     </div>
                 </div>
-            </div>        
-
+            </div>      
 
         </div>
 

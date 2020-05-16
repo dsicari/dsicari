@@ -207,7 +207,6 @@ public:
                 </div>
             </div>        
 
-
         </div>
 
         <?php include_once($rootDirectory."/widgets/go_top_button.php"); ?>

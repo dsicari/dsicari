@@ -1,36 +1,4 @@
-.title-cover-home{    
-    line-height: 1.4;
-    font-family: 'Roboto Slab';    
-    font-size: 7.5vw;
-    font-weight: 700;
-    color: var(--dracula-green);
+.title-cover{      
+    color: var(--dracula-orange);
     text-shadow: 3px 3px black;
-}
-
-.link-big{
-    color: var(--dracula-green);
-    text-align: center;
-}
-
-.description-item .tech-image{
-    margin-right: 25px;
-    /* width: 6vw; */
-}
-
-@media only screen and (max-width: 800px) {    
-    .title-cover-home{ 
-        margin-top: 5%;
-        line-height: 1.1;
-        font-size: 12vw;
-    }
-
-    .avatar-img{
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        /* PARA CROPAR IMAGEM */
-        object-fit: cover;
-        width: 100%;
-        height: 100px;
-    }
-
 }

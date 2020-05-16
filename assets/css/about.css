@@ -1,16 +1,9 @@
-.title-cover-home{    
-    line-height: 1.4;
-    font-family: 'Roboto Slab';    
-    font-size: 7.5vw;
-    font-weight: 700;
+.title-cover{    
     color: var(--dracula-orange);
     text-shadow: 3px 3px black;
 }
 
-.subtitle-cover-home{
-    font-family: 'Roboto Condensed';
-    font-size: 1.5vw;
-    font-weight: bold;
+.subtitle-cover{
     color: var(--dracula-pink);
     text-shadow: 2px 2px black;
     text-align: right;
@@ -21,9 +14,17 @@
     text-align: center;
 }
 
+.title-item > span{
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.description-item .periodo{
+    font-size: 1.2vw;
+}
+
 .description-item .tech-image{
     margin-right: 25px;
-    /* width: 6vw; */
 }
 
 ul{
@@ -41,16 +42,6 @@ ul{
 }
 
 @media only screen and (max-width: 800px) {    
-    .title-cover-home{ 
-        margin-top: 5%;
-        line-height: 1.1;
-        font-size: 12vw;
-    }
-
-    .subtitle-cover-home{
-        font-size: 3vw;
-    }
-
     .avatar-img{
         margin-top: 2vh;
         width: 100%;
@@ -62,6 +53,19 @@ ul{
         object-fit: cover;
         width: 100%;
         height: 100px;
+    }
+
+    .title-item > span{
+        font-size: 4vw;
+        font-weight: 500;
+    }
+
+    .description-item > span{
+        font-size: 3.5vw;        
+    }
+
+    .description-item .periodo{
+        font-size: 3vw;
     }
 
     .disappear-when-mobile{

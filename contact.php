@@ -12,7 +12,7 @@
 
             <div class="row">
                 <div class="col-sm-2 col-lg-1"></div>
-                <div class="col-sm-5 col-lg-10 title-cover-home">
+                <div class="col-sm-5 col-lg-10 title-cover">
                     You're gonna need a bigger boat.                                 
                 </div>
                 <div class="col-sm-5 col-lg-1"></div>
@@ -20,7 +20,7 @@
 
             <div class="row">
                 <div class="col-lg-1 col-sm-1"></div>
-                <div class="subtitle-cover-home col-lg-10 col-sm-10">
+                <div class="subtitle-cover col-lg-10 col-sm-10">
                     1975, Jaws
                 </div>
                 <div class="col-lg-1 col-sm-1"></div>
