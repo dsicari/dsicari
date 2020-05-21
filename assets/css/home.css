@@ -7,7 +7,7 @@
     line-height: 1;
     font-family: 'Fira Code';
     font-size: 13vw;
-    color: var(--dracula-purple);
+    color: var(--dracula-orange);
     text-shadow: 3px 3px black;
 }
 
@@ -15,7 +15,7 @@
     line-height: 1.07;
     font-family: 'Fira Code';
     font-size: 9vw;
-    color: var(--dracula-purple);
+    color: var(--dracula-orange);
     text-shadow: 3px 3px black;
 }
 

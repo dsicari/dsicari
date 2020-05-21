@@ -53,21 +53,21 @@
                 <div class="col-4 col-sm-2">
                     <a href="#formacao" class="text-decoration-none cursor-pointer">
                         <div id="formacao-link" class="link-big">
-                            <span>formação</span>                        
+                            <span>Formação</span>                        
                         </div>
                     </a>
                 </div>
                 <div class="col-4 col-sm-2">
                     <a href="#xp" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
-                            <span>xp</span>                        
+                            <span>Xp</span>                        
                         </div>
                     </a>
                 </div>
                 <div class="col-4 col-sm-2">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div id="skills-link" class="link-big">
-                            <span>skills</span>                        
+                            <span>Skills</span>                        
                         </div>
                     </a>
                 </div>  
@@ -75,14 +75,14 @@
                 <div class="col-sm-2 disappear-when-mobile">
                     <a href="#hobbies" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
-                            <span>hobbies</span>                        
+                            <span>Hobbies</span>                        
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-2 disappear-when-mobile">
                     <a href="#projetos" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
-                            <span>projetos</span>                        
+                            <span>Projetos</span>                        
                         </div>
                     </a>
                 </div>
@@ -97,14 +97,14 @@
                 <div class="col-4 appear-when-mobile">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
-                            <span>hobbies</span>                        
+                            <span>Hobbies</span>                        
                         </div>
                     </a>
                 </div>
                 <div class="col-4 appear-when-mobile">
                     <a href="#skills" class="text-decoration-none cursor-pointer">
                         <div class="link-big">
-                            <span>projetos</span>                        
+                            <span>Projetos</span>                        
                         </div>
                     </a>
                 </div>

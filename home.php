@@ -14,7 +14,7 @@
                 <div class="col-lg-6 col-sm-12">
                     <div class="title-cover">DANILO</div>                         
                     <div class="title-cover-second">de nadai</div>
-                    <div class="title-cover-second">sicari</div>                                      
+                    <div class="title-cover-second">sícari</div>                                      
                 </div>
                 <div class="col-lg-4 title-cover-img">
                     <img src="assets/img/developer_pattern.svg">

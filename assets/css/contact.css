@@ -1,6 +1,7 @@
 .title-cover{   
     color: var(--dracula-red);
     text-shadow: 3px 3px black;
+    line-height: 1.25;
 }
 
 .subtitle-cover{
