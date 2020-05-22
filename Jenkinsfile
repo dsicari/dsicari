@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:'
-    }
-
-  }
+  agent none
   stages {
     stage('Build') {
       steps {
