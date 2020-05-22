@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Hello!'
-        sh 'ssh -p 50683 root@ssh.dsicari.com.br "hostname"'
+        sh 'ssh -p 50683 root@ssh.dsicari.com.br \'hostname\''
       }
     }
 
