@@ -11,7 +11,7 @@
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-sm-2 col-lg-1"></div>
+                <div class="col-sm-2 col-lg-1"></div> 
                 <div class="col-sm-5 col-lg-10 title-cover">
                     You're gonna need a bigger boat.                                 
                 </div>
