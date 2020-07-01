@@ -531,8 +531,10 @@ void TCrytiger::EncryptDecrypt(unsigned char *inpString, int len){
     }
 }
 </pre>
-</div>                          
+</div>
+                          
                                 <p id="section-4" class="title">Resultados</p>
+                                <hr>
 
                                 <p class="text">O alimentador automático realizou as funções de dispensa do alimento nos horários pré-determinados de forma eficiente 
                                 em 98,7% dos casos, o que indicou um alto nível de eficiência para a função principal que o qual foi desenvolvido. A quantidade de                                    
@@ -541,6 +543,7 @@ void TCrytiger::EncryptDecrypt(unsigned char *inpString, int len){
                                  baixa eficiência sendo que o modelo utilizado não foi o mais apropriado para o projeto em questão. </p>
                                 
                                 <p id="section-5" class="title">Considerações Finais</p>
+                                <hr>
 
                                 <p class="text">O uso de aparelhos de automação contribui de forma significativa para uma melhor qualidade de vida dos seus usuários 
                                 neste contexto o PetFeeder se mostrou eficiência para garantir a alimentação regular do pet, de forma que pode vir a evitar 

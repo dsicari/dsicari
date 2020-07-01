@@ -1,0 +1,9 @@
+{
+    "title": "Gerenciador de eventos",
+    "subtitle": "A área de tecnologia, por si só, tem a necessidade de propor debates e explanações sobre diversos assuntos. E comumente esses debates acontecem em eventos tais como seminários, simpósios, feiras, semanas acadêmicas, entre outros. Contudo, quando uma faculdade realiza um desses eventos, um problema de gestão aparece: como coordenar e gerenciar esses eventos?",
+    "badges": [
+        "eventos", "gerenciamento"
+    ],
+    "image": "avatar.png",
+    "tags": ["project"]
+}
