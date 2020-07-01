@@ -395,6 +395,158 @@ CREATE TABLE `device` (
                                     <p class="text">Os horários de alimentação, quantidade de comida a ser colocada e número de sequência de pacote são
                                          gravados na memória EEPROM do Arduino para que as informações não se percam quando houver falta de energia.</p>
 
+                                    <p class="header-lvl-2">Síntese do Código Servidor</p>
+
+                                    <p class="text">A chave para funcionamento do servidor é a utilização do método FORK (disponível para UNIX). Este método 
+                                    permite criar um novo processo idêntico ao processo que o gerou. Sempre que receber um pacote e efetuar sua validação o 
+                                    servidor faz um FORK no processo principal, denominado pai e cria um processo filho, idêntico ao pai. Então o processo 
+                                    filho faz as operações necessárias e se encerra.</p>
+                                    
+                                    <p class="text">A imagem a seguir ilustra o servidor recebendo um pacote, calculando o CRC e realizando o FORK, sendo 
+                                    que a cada FORK realizado o servidor gera um TOKEN para o processo filho, assim pode-se relacionar o momento do FORK 
+                                    com a ação executada pelo processo gerado.</p>
+
+                                    <img class="post-img rounded mx-auto d-block" src="img/log-fork.png" alt="Log gerado no processo pai">
+                                    <p class="subtitle-item">Log gerado no processo pai</p>
+
+                                    <p class="text">A imagem a seguir ilustra o processo filho verificando se há mensagem a ser retornada para o alimentador,
+                                     enviando mensagem e se encerrando.</p>
+
+                                    <img class="post-img rounded mx-auto d-block" src="img/log-fork-child.png" alt="Log gerado no processo filho">
+                                    <p class="subtitle-item">Log gerado no processo filho</p>
+
+                                    <p class="text">A chave para a utilização do método FORK é sempre perguntar aos seus processos filhos como eles estão: </p>
+
+<div>
+<!-- https://github.com/google/code-prettify -->
+<pre class="prettyprint linenums code-box">
+pr=waitpid(-1, &status, WNOHANG);
+if(pr == -1){
+    log_debug("No forked child, waitpid=%d", pr);
+}
+</pre>
+</div>                                 
+
+                                    <p class="text">Caso não haja este tipo de interação entre processo pai e processo filho, sempre que o processo filho se encerrar, 
+                                    ele irá se encontrar em modo ZOMBIE, ou seja, o processo filho se encerrou, mas ainda continua na memória do computador, 
+                                    aguardando o processo pai se encerrar. Deste ponto em diante há dois processos, no mínimo, sendo executados no servidor, 
+                                    o processo pai, que continua a receber pacotes e o processo filho que trata este pacote recebido. </p>
+
+                                    <p class="header-lvl-2">Criptografia</p>
+
+                                    <p class="text">Buscando por algoritmos de criptografía simétrica (onde utiliza-se a mesma chave para encriptar/desencriptar), 
+                                    encontrou-se diversos métodos consolidados como: AES (Advanced Encryption Standard), DES (Data Encryption Standard), 
+                                    3DES, RC4, entre outros. O problema em escolher algum desstes está totalmente atrelado ao quanto de memória o dispositivo 
+                                    deve dispor para processar o mesmo. Diante desta questão, entendeu-se que seria inviável utilizar os métodos criptográficos 
+                                    encontrados, e sim, criar um método próprio e simples, o qual foi feito e batizado de Cry Tiger. </p>
+
+                                    <p class="text">A operação básica de um método de criptografia é embaralhar uma mensagem, transmiti-la e poder desembaralhar 
+                                    a mesma sem perder ou ter seu conteúdo alterado. Um modelo simples de criptografia é a Cifra de César, o qual serviu de base 
+                                    para a concepção do Cry Tiger. O modelo de César, é um tipo de cifra de substituição na qual cada letra do texto é substituída 
+                                    por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. Por exemplo, com uma troca de três posições, 
+                                    A seria substituído por D, B se tornaria E, e assim por diante. O nome do método é em homenagem a Júlio César, que o usou 
+                                    para se comunicar com os seus generais. </p>
+
+                                    <img class="post-img rounded mx-auto d-block" src="img/cifra-de-cesar.png" alt="Cifra de César">
+                                    <p class="subtitle-item">Cifra de César</p>
+
+                                    <img class="post-img rounded mx-auto d-block" src="img/texto-cifrado.png" alt="Texto cifrado com base no modelo de César">
+                                    <p class="subtitle-item">Texto cifrado com base no modelo de César</p>
+
+                                    <p class="text">O método implementado utiliza a operação XOR (OU Exclusivo) como forma de substituição, onde a tabela verdade
+                                     XOR é apresentada abaixo:</p>
+
+                                    <img class="post-img rounded mx-auto d-block" src="img/tabela-xor.png" alt="Tabela verdade XOR">
+                                    <p class="subtitle-item">Tabela verdade XOR</p>
+
+                                    <p class="text">Portanto, o algoritmo deverá ter um buffer para armazenar o conteúdo a ser encriptado e um buffer contendo 
+                                     uma chave que servirá para realizar a encriptação. Neste modelo pode ser encriptado qualquer tipo de dado, não somente texto. 
+                                     Logo, faz-se a operação XOR de cada elemento do buffer com o elemento de mesmo índice da chave, para se obter o texto encriptado:</p>
+<div>
+<!-- https://github.com/google/code-prettify -->
+<pre class="prettyprint linenums code-box">
+Buffer plaintext    31  32  33  34  35 
+Buffer chave 	    FF  AE  22  31  43 
+  	                    XOR 
+Buffer encriptado   CE  9C  11  5   76 
+</pre>
+</div>
+                                    <p class="text">O mesmo vale para quando necessita-se desencriptar um buffer: </p>
+<div>
+<!-- https://github.com/google/code-prettify -->
+<pre class="prettyprint linenums code-box">
+Buffer encriptado   CE  9C  11  5   76
+Buffer chave 	    FF  AE  22  31  43 
+  	                    XOR 
+Buffer plaintext    31  32  33  34  35
+</pre>
+</div>
+                                <p class="text">O buffer a ser encriptado não tem seu tamanho limitado, porém é preciso conhecer o seu tamanho para o processo de 
+                                 encriptação/desencriptação ocorrer.</p>
+
+                                <p class="text">Para deixar o algoritmo dinâmico, a chave do Cry Tiger pode ter seu tamanho modificado, de acordo com a 
+                                 necessidade do usuário. Isto é definido no header do arquivo:</p>
+<div>
+<!-- https://github.com/google/code-prettify -->
+<pre class="prettyprint linenums code-box">
+#define LEN_XORKEY 32
+</pre>
+</div>
+                                <p class="text">Possui um método para expandir a chave utilizada para o seu tamanho máximo. Isto é necessário quando por exemplo, 
+                                 usuário cria uma chave: “12345” mas a mesma é de tamanho máximo de 16 bytes, logo ela será expandida para “1234512345123451”. </p>
+
+<div>
+<!-- https://github.com/google/code-prettify -->
+<pre class="prettyprint linenums code-box">
+void TCrytiger::InitTiger(unsigned char *key, int lenKey){
+    int index=0;
+    memset(XorKey, 0, LEN_XORKEY);
+
+    while(index < LEN_XORKEY){
+        if(LEN_XORKEY-index > lenKey){
+            memcpy(&XorKey[index], key, lenKey);
+            index+=lenKey;
+        }
+        else{
+            memcpy(&XorKey[index], key, LEN_XORKEY-index);
+            break;
+        }
+    }
+}
+</pre>
+</div>       
+                                <p class="text">Com a chave já expandida, realiza-se a encriptação/desencriptação utilizando a operação XOR, pelo método a seguir, 
+                                 independentemente do tamanho do buffer a ser recebido: </p> 
+<div>
+<!-- https://github.com/google/code-prettify -->
+<pre class="prettyprint linenums code-box">
+void TCrytiger::EncryptDecrypt(unsigned char *inpString, int len){
+    int index=0;
+    for(int i = 0; i < len; i++){
+        if(index >= LEN_XORKEY){
+            index=0;
+        }
+        inpString[i] = inpString[i] ^ XorKey[index];
+        index++;
+    }
+}
+</pre>
+</div>                          
+                                <p id="section-4" class="title">Resultados</p>
+
+                                <p class="text">O alimentador automático realizou as funções de dispensa do alimento nos horários pré-determinados de forma eficiente 
+                                em 98,7% dos casos, o que indicou um alto nível de eficiência para a função principal que o qual foi desenvolvido. A quantidade de                                    
+                                ração presente no dispensador apresentou uma porcentagem de exatidão de aproximadamente 80%, apesar de alto valor este índice pode 
+                                ser melhorado através do uso de sensores mais precisos, a quantidade de alimento mensurada através do sensor de carga se mostrou de
+                                 baixa eficiência sendo que o modelo utilizado não foi o mais apropriado para o projeto em questão. </p>
+                                
+                                <p id="section-5" class="title">Considerações Finais</p>
+
+                                <p class="text">O uso de aparelhos de automação contribui de forma significativa para uma melhor qualidade de vida dos seus usuários 
+                                neste contexto o PetFeeder se mostrou eficiência para garantir a alimentação regular do pet, de forma que pode vir a evitar 
+                                doenças decorrentes da má nutrição ocasionada pela forma de vida dos seus tutores que não encontram tempo hábil na garantia 
+                                de fornecer uma alimentação adequada ao seu animal.</p>
+
                                 </article>
                             </div>
 
