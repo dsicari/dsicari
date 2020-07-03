@@ -51,20 +51,23 @@
                 
                 <div id="apresentacao" class="row">
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-10 content-box">
+                    <div class="col-sm-10 content-box cursor-pointer noselect" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
                         <div class="container-fluid content">
                             <div class="row"> 
                                 <!-- <div class="col-12 col-md-3">
                                     <img class="avatar-img" src="<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$postDir.DIRECTORY_SEPARATOR.$post['image'])) ?>">
                                 </div> -->
-                                <div class="col-12 col-md-12 my-auto cursor-pointer" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
+                                <div class="col-12 col-md-12 my-auto cursor-pointer">
                                     <span class="title"><?php echo($post['title']) ?></span>
                                     <hr>
                                 </div>
                             </div>
-                            <div class="row mt-2"> 
-                                <div class="col-12 cursor-pointer" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
-                                    <span class="text"><?php echo($post['subtitle']) ?></span>
+                            <div class="row mt-2">
+                                <div class="col-12 cursor-pointer">
+                                    <span class="text">
+                                        <?php echo($post['subtitle']) ?> 
+                                        <a href="<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>"> VEJA MAIS</a>
+                                    </span>
                                 </div>
                             </div>
                             <div class="row mt-2">

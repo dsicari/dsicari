@@ -49,7 +49,7 @@
 
                 <div id="apresentacao" class="row">
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-10 content-box" onclick="window.location.href = '<?php echo($rootDirectory); ?>/posts/br/2020/03/07/01/primeira-pagina.php';">
+                    <div class="col-sm-10 content-boxcursor-pointer noselect" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
                         <div class="container-fluid content cursor-pointer">
                             <div class="row">
                                 <div class="col-md-12">
