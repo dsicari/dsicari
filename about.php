@@ -134,7 +134,7 @@
                                 <span>
                                     <b>FATEC - Faculdade de Tecnologia</b>
                                     <br>Araras/SP, conclusão jun/2020
-                                    <br>https://www.fatecararas.com.br/
+                                    <br><a href="https://www.fatecararas.com.br/" target="_blank">fatecararas.com.br</a>
                                 </span>
                             </div>
                         </div>    
@@ -150,7 +150,7 @@
                                 <span>
                                     <b>UFSCAR - Universidade Federal de São Carlos</b>
                                     <br>Sorocaba/SP, Cursado até o 3o ano
-                                    <br>https://www.sorocaba.ufscar.br/
+                                    <br><a href="https://www.sorocaba.ufscar.br/" target="_blank">sorocaba.ufscar.br</a>
                                 </span>
                             </div>
                         </div> 
@@ -166,7 +166,7 @@
                                 <span>
                                     <b>FACENS - Faculdade de Engenharia de Sorocaba</b>
                                     <br>Sorocaba/SP, 2015
-                                    <br>https://www.facens.br/home
+                                    <br><a href="https://www.facens.br/home" target="_blank">facens.br</a>
                                 </span>
                             </div>
                         </div> 
@@ -182,7 +182,7 @@
                                 <span>
                                     <b>FACENS - Faculdade de Engenharia de Sorocaba</b>
                                     <br>Sorocaba/SP, 2013
-                                    <br>https://www.facens.br/home
+                                    <br><a href="https://www.facens.br/home" target="_blank">facens.br</a>
                                 </span>
                             </div>
                         </div> 
@@ -198,7 +198,7 @@
                                 <span>
                                     <b>FATEC - Faculdade de Tecnologia</b>
                                     <br>Tatuí/SP, 2010
-                                    <br>https://www.fatectatui.edu.br/
+                                    <br><a href="https://www.fatectatui.edu.br/" target="_blank">fatectatui.edu.br</a>
                                 </span>
                             </div>
                         </div> 
@@ -214,7 +214,7 @@
                                 <span>
                                     <b>ETEC - Escola Tecnica</b>
                                     <br>Tatuí/SP, 2008
-                                    <br>https://www.etecsalesgomes.com.br/
+                                    <br><a href="https://www.etecsalesgomes.com.br/" target="_blank">etecsalesgomes.com.br</a>
                                 </span>
                             </div>
                         </div> 
@@ -320,12 +320,10 @@
                                 <img class="tech-image" src="assets/icon/technologies/mysql.svg">
                                 <img class="tech-image" src="assets/icon/technologies/docker.svg"> -->
                                 <ul>
-                                    <li>Java</li>
-                                    <li>Spring</li>
-                                    <li>DynamoDB</li>
-                                    <li>ReactJS</li>
-                                    <li>MySql</li>
-                                    <li>Docker</li>
+                                    <li><b>Java (Spring Boot)</b>: backend</li>  
+                                    <li><b>React</b>: frontend</li>                                  
+                                    <li><b>MySql</b> e <b>DynamoDB</b>: persistência de dados</li>                                                                        
+                                    <li><b>Docker</b>: infraestrutura</li>
                                 </ul>
                             </div>
                         </div>    
@@ -343,10 +341,10 @@
                                 <img class="tech-image" src="assets/icon/technologies/python.svg">
                                 <img class="tech-image" src="assets/icon/technologies/php.svg"> -->
                                 <ul>
-                                    <li>Borland Builder C++ 6</li>
-                                    <li>C#</li>
-                                    <li>Python</li>
-                                    <li>PHP</li>
+                                    <li><b>Borland Builder C++ 6</b>: interfaces gráficas para equipamentos eletrônicos, comunicação USB e Serial, interface com smartcards, implementação ISO8583</li>
+                                    <li><b>C#</b>: detecção de faces em vídeo, interface gráfica para kioske de autoatendimento, gerenciamento de equipamentos rede com mapa integrado</li>
+                                    <li><b>Python</b>: processamento de video e imagem, matemática aplicada e muita, muita diversão</li>
+                                    <li><b>PHP</b>: sistema de gerenciamento de eventos, sistema de gerenciamento de treinamentos</li>
                                 </ul>
                             </div>
                         </div> 
@@ -365,11 +363,10 @@
                                 <img class="tech-image" src="assets/icon/technologies/raspberry.svg">
                                 <img class="tech-image" src="assets/icon/technologies/qt.svg"> -->
                                 <ul>
-                                    <li>Arduino</li>
-                                    <li>ARM</li>
-                                    <li>ARM mbed</li>
-                                    <li>Raspbery Pi</li>
-                                    <li>QT</li>
+                                    <li><b>Atmel</b>: comunicação serial, USB, interface com sistemas de potência, rede wirelless ZIGBEE, displays LCD, matriz de LEDs</li>
+                                    <li><b>ARM</b> e <b>ARM mbed</b>: implementação de protocolo USB</li>                                    
+                                    <li><b>Raspbery Pi</b>: videoWall para sistema de monitoramento, interface SPI com displays TFT, roteamento de rede 3G, fliperama, contador de descargas elétricas, servidor DLNA, controlador de estção de radioamador</li>
+                                    <li><b>QT</b>: interface gráfica e browsers para sistemas embarcados</li>
                                 </ul>
                             </div>
                         </div> 
@@ -385,10 +382,10 @@
                                 <!-- <img class="tech-image" src="assets/icon/technologies/flutter.svg">
                                 <img class="tech-image" src="assets/icon/technologies/mongodb.svg">
                                 <img class="tech-image" src="assets/icon/technologies/nodejs.svg"> -->
-                                <ul>
-                                    <li>Flutter</li>
-                                    <li>MongoDB</li>
-                                    <li>Node JS</li>
+                                <ul>                                    
+                                    <li><b>Node JS</b></li>
+                                    <li><b>React Native</b></li>
+                                    <li><b>Flutter</b></li>                                    
                                 </ul>
                             </div>
                         </div> 
