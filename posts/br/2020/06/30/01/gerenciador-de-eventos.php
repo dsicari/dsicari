@@ -139,8 +139,10 @@
                                     a qual é muito conhecida por gerenciar eventos de grande porte, bem como Tickets For 
                                     Fun e Livepass. Porém não aceita que o próprio usuário crie e gerencie seus próprios 
                                     eventos como a Sympla. </p>
-
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/ingresso-ponto-com.png" alt="Tela inicial da empresa Ingresso.com">
+                                    
+                                    <a data-fancybox="gallery" href="img/ingresso-ponto-com.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/ingresso-ponto-com.png" alt="Tela inicial da empresa Ingresso.com">
+                                    </a>
                                     <p class="subtitle-item">Tela inicial da empresa Ingresso.com</p>
 
                                     <p id="section-3" class="title">Métodos e ferramentas</p>
@@ -150,7 +152,9 @@
                                      padrões de projetos já consolidados, onde optou-se pelo MVC - Model View Controller, o qual é 
                                      representado pela figura a seguir. </p>
                                     
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/modelo-mvc.png" alt="Modelo MVC">
+                                    <a data-fancybox="gallery" href="img/modelo-mvc.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/modelo-mvc.png" alt="Modelo MVC">
+                                    </a>
                                     <p class="subtitle-item">Modelo MVC</p>
                                     
                                     <p class="text">Neste padrão de projeto: </p>
@@ -166,7 +170,9 @@
 
                                     <p class="text">Em suma a topologia do sistema de eventos pode ser conferida pela imagem a seguir. </p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/topologia-eventos-fatec.png" alt="Topologia eventos fatec">
+                                    <a data-fancybox="gallery" href="img/topologia-eventos-fatec.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/topologia-eventos-fatec.png" alt="Topologia eventos fatec">
+                                    </a>
                                     <p class="subtitle-item">Topologia eventos Fatec</p>
 
                                     <p class="text">Onde:</p>
@@ -205,7 +211,9 @@
 
                                     <p class="text">O banco de dados tem sua estrutura definida de acordo com o seguinte diagrama</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/modelo-entidade-relacionamento.png" alt="Modelo Entidade Relacionamento">
+                                    <a data-fancybox="gallery" href="img/modelo-entidade-relacionamento.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/modelo-entidade-relacionamento.png" alt="Modelo Entidade Relacionamento">
+                                    </a>
                                     <p class="subtitle-item">Modelo Entidade Relacionamento</p>
 
                                     <p id="section-4" class="title">Relato do processo</p>
@@ -214,7 +222,9 @@
                                     <p class="text">Conforme os requisitos levantados e discutidos, a implantação aconteceu em partes e 
                                     algumas destas em paralelo, como pode ser conferido a seguir: </p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/grafico-entregas.png" alt="Gráfico de entregas do projeto Eventos Fatec">
+                                    <a data-fancybox="gallery" href="img/grafico-entregas.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/grafico-entregas.png" alt="Gráfico de entregas do projeto Eventos Fatec">
+                                    </a>
                                     <p class="subtitle-item">Gráfico de entregas do projeto Eventos Fatec</p>
                                     
                                     <p class="text">Houveram quatro momentos importantes durante o desenvolvimento, os quais são discutidos a seguir</p>
@@ -263,7 +273,9 @@
                                     inscrição/cancelamento de atividades para usuários comuns. Disponível em 
                                     <a href="https://eventosfatec.dsicari.com.br/">https://eventosfatec.dsicari.com.br/</a> ou pelo <a href="https://youtu.be/z7Q79lKpZW0">vídeo</a>.</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/pagina-usuario-sistema-eventos-fatec.png" alt="Página de usuário do sistema Eventos Fatec">
+                                    <a data-fancybox="gallery" href="img/pagina-usuario-sistema-eventos-fatec.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/pagina-usuario-sistema-eventos-fatec.png" alt="Página de usuário do sistema Eventos Fatec">
+                                    </a>
                                     <p class="subtitle-item">Página de usuário do sistema Eventos Fatec</p>
 
                                     <p class="text">A tela de administrador é capaz de incluir novos eventos, atividades e palestrantes, 
@@ -272,7 +284,9 @@
                                     <a href="https://eventosfatec.dsicari.com.br/home">https://eventosfatec.dsicari.com.br/home</a> ou pelo 
                                     <a href="https://youtu.be/of0VlffWNys">vídeo</a>.</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/pagina-administracao-sistema-eventos-fatec.png" alt="Página de administração do sistema Eventos Fatec">
+                                    <a data-fancybox="gallery" href="img/pagina-administracao-sistema-eventos-fatec.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/pagina-administracao-sistema-eventos-fatec.png" alt="Página de administração do sistema Eventos Fatec">
+                                    </a>
                                     <p class="subtitle-item">Página de administração do sistema Eventos Fatec</p>
 
                                     <p id="section-6" class="title">Considerações</p>
@@ -301,7 +315,9 @@
                                     ter problemas com a memória cache do navegador. A equipe não conseguiu resolver o 
                                     problema durante o evento, porém respondeu de uma maneira muito objetiva: </p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/erro-login.png" alt="Imagem de erro apresentada ao usuário">
+                                    <a data-fancybox="gallery" href="img/erro-login.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/erro-login.png" alt="Imagem de erro apresentada ao usuário">
+                                    </a>
                                     <p class="subtitle-item">Imagem de erro apresentada ao usuário</p>
 
                                     <p class="text">Em suma, o sistema se mostrou estável e crumpriu o seu papel, o de 

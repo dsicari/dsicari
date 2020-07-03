@@ -145,6 +145,14 @@ li.L5, li.L6, li.L7, li.L8 {
         margin-bottom: 0.2rem;
     }
 
+    .header-lvl-3{
+        line-height: 1.0;        
+        font-weight: 300;
+        font-size: 5vw;
+        margin-left: 2vw;
+        text-decoration: underline;
+    }
+
     .text{
         font-size: 4vw;
     }
@@ -171,7 +179,7 @@ li.L5, li.L6, li.L7, li.L8 {
     pre.code-box{
         width: 100%;
         font-size: 2.5vw;
-        margin-bottom: 0;
+        margin-bottom: 5vw;
     }
 
     pre > ol{
