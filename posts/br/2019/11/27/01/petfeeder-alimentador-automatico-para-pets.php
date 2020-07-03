@@ -110,20 +110,26 @@
                                     <p class="text">Não houve um equipamento que atendesse a todos os requisitos supracitados, 
                                         mas houveram alguns que chamaram a atenção, como:</p>
 
-                                    <img class="post-img img-fluid img-fluid rounded mx-auto d-block" src="img/kit-comedouro.png" alt="Kit Comedouro">
+                                    <a data-fancybox="gallery" href="img/kit-comedouro.png">
+                                        <img class="post-img img-fluid img-fluid rounded mx-auto d-block" src="img/kit-comedouro.png" alt="Kit Comedouro">
+                                    </a>
                                     <p class="subtitle-item">Kit Comedouro</p>
 
                                     <p class="text">Neste caso, o equipamento não possui nenhum tipo de controle de dispensa de alimento, 
                                         não possui nenhuma inteligência, porém se mostra ser de fácil instalação, uso, manutenção e 
                                         higienização.</p>
 
-                                    <img class="post-img img-fluid img-fluid rounded mx-auto d-block" src="img/alimentador-18l.png" alt="Alimentador 18l">
+                                    <a data-fancybox="gallery" href="img/alimentador-18l.png">
+                                        <img class="post-img img-fluid img-fluid rounded mx-auto d-block" src="img/alimentador-18l.png" alt="Alimentador 18l">
+                                    </a>
                                     <p class="subtitle-item">Alimentador 18l</p>
 
                                     <p class="text">Este dispositivo nada mais seria que um tambor de comida com um timer (de mercado) 
                                         acoplado, o qual permite a programação da alimentação, sendo de fácil instalação e uso.</p>
                                     
-                                    <img class="post-img img-fluid img-fluid rounded mx-auto d-block" src="img/alimentador-digital.png" alt="Alimentador Digital">
+                                    <a data-fancybox="gallery" href="img/alimentador-digital.png">
+                                        <img class="post-img img-fluid img-fluid rounded mx-auto d-block" src="img/alimentador-digital.png" alt="Alimentador Digital">
+                                    </a>
                                     <p class="subtitle-item">Alimentador Digital</p>
 
                                     <p class="text">Alimentador digital automático sofisticado com todos os itens necessários citados,
@@ -163,19 +169,28 @@
 
                                     <p class="text">Localmente também é possível colocar comida através dos botões de acesso do dispositivo.</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block w-50" src="img/suporte-parede.png" alt="Suporte parede">
+                                    <a data-fancybox="gallery" href="img/suporte-parede.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block w-50" src="img/suporte-parede.png" alt="Suporte parede">
+                                    </a>
                                     <p class="subtitle-item">Suporte Parede</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block w-50" src="img/rosca-sem-fim.png" alt="Rosca sem fim">
+                                    <a data-fancybox="gallery" href="img/rosca-sem-fim.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block w-50" src="img/rosca-sem-fim.png" alt="Rosca sem fim">
+                                    </a>
                                     <p class="subtitle-item">Rosca sem fim</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block w-50" src="img/balanca.png" alt="Balança">
+                                    <a data-fancybox="gallery" href="img/balanca.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block w-50" src="img/balanca.png" alt="Balança">
+                                    </a>
                                     <p class="subtitle-item">Balança</p>
 
                                     <p class="header-lvl-2">Componentes Eletrônicos</p>
 
                                     <p class="text">Os componentes eletrônicos a seguir constituem o PetFeeder:</p>
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/componentes-eletronicos.png" alt="Componentes eletrônicos">
+
+                                    <a data-fancybox="gallery" href="img/componentes-eletronicos.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/componentes-eletronicos.png" alt="Componentes eletrônicos">
+                                    </a>
                                     <p class="subtitle-item">Componentes eletrônicos</p>
 
                                     <ul class="text">
@@ -196,7 +211,9 @@
                                         execute alguns comandos, como por exemplo: colocar comida, alterar horário alimentação, etc. Por fim, os usuários podem interagir com 
                                         o alimentador remotamente através de um site ou localmente através dos botões do alimentador.</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/topologia.png" alt="Topologia alimentador">
+                                    <a data-fancybox="gallery" href="img/topologia.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/topologia.png" alt="Topologia alimentador">
+                                    </a>
                                     <p class="subtitle-item">Topologia alimentador</p>
 
                                     <p class="header-lvl-2">Protocolo Comunicação</p>
@@ -205,7 +222,9 @@
                                         Tanto o programa que roda no servidor e o programa que roda no Arduino foram feitos em C++. A comunicação se faz da 
                                         seguinte maneira:</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/protocolo-comunicacao.png" alt="Protocolo comunicação">
+                                    <a data-fancybox="gallery" href="img/protocolo-comunicacao.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/protocolo-comunicacao.png" alt="Protocolo comunicação">
+                                    </a>
                                     <p class="subtitle-item">Protocolo comunicação</p>
 
                                     <p class="title">Comunicação Alimentador - Servidor</p>
@@ -406,13 +425,17 @@ CREATE TABLE `device` (
                                     que a cada FORK realizado o servidor gera um TOKEN para o processo filho, assim pode-se relacionar o momento do FORK 
                                     com a ação executada pelo processo gerado.</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/log-fork.png" alt="Log gerado no processo pai">
+                                    <a data-fancybox="gallery" href="img/log-fork.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/log-fork.png" alt="Log gerado no processo pai">
+                                    </a>
                                     <p class="subtitle-item">Log gerado no processo pai</p>
 
                                     <p class="text">A imagem a seguir ilustra o processo filho verificando se há mensagem a ser retornada para o alimentador,
                                      enviando mensagem e se encerrando.</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/log-fork-child.png" alt="Log gerado no processo filho">
+                                    <a data-fancybox="gallery" href="img/log-fork-child.png"> 
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/log-fork-child.png" alt="Log gerado no processo filho">
+                                    </a>
                                     <p class="subtitle-item">Log gerado no processo filho</p>
 
                                     <p class="text">A chave para a utilização do método FORK é sempre perguntar aos seus processos filhos como eles estão: </p>
@@ -447,16 +470,22 @@ if(pr == -1){
                                     A seria substituído por D, B se tornaria E, e assim por diante. O nome do método é em homenagem a Júlio César, que o usou 
                                     para se comunicar com os seus generais. </p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/cifra-de-cesar.png" alt="Cifra de César">
+                                    <a data-fancybox="gallery" href="img/cifra-de-cesar.png"> 
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/cifra-de-cesar.png" alt="Cifra de César">
+                                    </a>
                                     <p class="subtitle-item">Cifra de César</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/texto-cifrado.png" alt="Texto cifrado com base no modelo de César">
+                                    <a data-fancybox="gallery" href="img/texto-cifrado.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/texto-cifrado.png" alt="Texto cifrado com base no modelo de César">
+                                    </a>
                                     <p class="subtitle-item">Texto cifrado com base no modelo de César</p>
 
                                     <p class="text">O método implementado utiliza a operação XOR (OU Exclusivo) como forma de substituição, onde a tabela verdade
                                      XOR é apresentada abaixo:</p>
 
-                                    <img class="post-img img-fluid rounded mx-auto d-block" src="img/tabela-xor.png" alt="Tabela verdade XOR">
+                                    <a data-fancybox="gallery" href="img/tabela-xor.png">
+                                        <img class="post-img img-fluid rounded mx-auto d-block" src="img/tabela-xor.png" alt="Tabela verdade XOR">
+                                    </a>
                                     <p class="subtitle-item">Tabela verdade XOR</p>
 
                                     <p class="text">Portanto, o algoritmo deverá ter um buffer para armazenar o conteúdo a ser encriptado e um buffer contendo 
