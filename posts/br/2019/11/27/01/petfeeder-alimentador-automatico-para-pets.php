@@ -498,17 +498,24 @@ Buffer plaintext    31  32  33  34  35
 <div>
 <!-- https://github.com/google/code-prettify -->
 <pre class="prettyprint linenums code-box">
-void TCrytiger::InitTiger(unsigned char *key, int lenKey){
+void TCrytiger::InitTiger(
+    unsigned char *key,
+    int lenKey)
+{
     int index=0;
     memset(XorKey, 0, LEN_XORKEY);
 
     while(index < LEN_XORKEY){
         if(LEN_XORKEY-index > lenKey){
-            memcpy(&XorKey[index], key, lenKey);
+            memcpy(&XorKey[index], 
+                   key, 
+                   lenKey);
             index+=lenKey;
         }
         else{
-            memcpy(&XorKey[index], key, LEN_XORKEY-index);
+            memcpy(&XorKey[index], 
+                   key, 
+                   LEN_XORKEY-index);
             break;
         }
     }
@@ -520,13 +527,17 @@ void TCrytiger::InitTiger(unsigned char *key, int lenKey){
 <div>
 <!-- https://github.com/google/code-prettify -->
 <pre class="prettyprint linenums code-box">
-void TCrytiger::EncryptDecrypt(unsigned char *inpString, int len){
+void TCrytiger::EncryptDecrypt(
+    unsigned char *inpString, 
+    int len)
+{
     int index=0;
     for(int i = 0; i < len; i++){
         if(index >= LEN_XORKEY){
             index=0;
         }
-        inpString[i] = inpString[i] ^ XorKey[index];
+        inpString[i] = 
+            inpString[i] ^ XorKey[index];
         index++;
     }
 }
