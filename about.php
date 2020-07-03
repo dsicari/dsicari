@@ -37,9 +37,9 @@
                                 <img class="avatar-img" src="assets/img/foto_perfil.jpg">
                             </div>
                             <div class="col-12 col-md-9">
-                                <span class="title">Danilo de Nadai Sicari</span>
+                                <span class="title">Danilo de Nadai Sícari</span>
                                 <hr>
-                                <span class="text">Nascido em 1990 e criado com muito sucrilhos no prato, acredita fielmente no poder da internet e que se alguém foi capaz de fazer, outro alguém também fará. Iniciou carreira em uma distribuidora de equipamentos industriais e uns tantos anos depois resolveu pular a cerca e foi para a área de TI, a qual tinha por hobby. Hoje, o hobby é outro, curte cortar madeira, tocar bateria e fazer download de imagens metereológicas de satélites no quintal de sua avó.</span>
+                                <span class="text">Nascido em 1990 e criado com muito sucrilhos no prato, acredita fielmente no poder da internet e que se alguém foi capaz de fazer, outro alguém também fará. Iniciou carreira em uma fabricante de sensores industriais e uns tantos anos depois resolveu pular a cerca e foi para a área de TI, a qual tinha por hobby. Hoje, o hobby é outro, curte cortar madeira, tocar bateria e fazer download de imagens metereológicas de satélites no quintal de sua avó.</span>
                             </div>
                         </div>
                     </div>
@@ -363,9 +363,11 @@
                                 <img class="tech-image" src="assets/icon/technologies/raspberry.svg">
                                 <img class="tech-image" src="assets/icon/technologies/qt.svg"> -->
                                 <ul>
-                                    <li><b>Atmel</b>: comunicação serial, USB, interface com sistemas de potência, rede wirelless ZIGBEE, displays LCD, matriz de LEDs</li>
+                                    <li><b>Atmel</b>: comunicação serial, USB, interface com sistemas de potência, rede 
+                                    wirelless ZIGBEE, displays LCD, matriz de LEDs</li>
                                     <li><b>ARM</b> e <b>ARM mbed</b>: implementação de protocolo USB</li>                                    
-                                    <li><b>Raspbery Pi</b>: videoWall para sistema de monitoramento, interface SPI com displays TFT, roteamento de rede 3G, fliperama, contador de descargas elétricas, servidor DLNA, controlador de estção de radioamador</li>
+                                    <li><b>Raspbery Pi</b>: videoWall para sistema de monitoramento de vídeo, interface 
+                                    SPI com displays TFT, roteamento de rede 3G, fliperama, contador de descargas elétricas, servidor DLNA, controlador de estação de radioamador</li>
                                     <li><b>QT</b>: interface gráfica e browsers para sistemas embarcados</li>
                                 </ul>
                             </div>
@@ -412,17 +414,23 @@
                         <div class="row">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-4">                                        
-                                        <img class="hobby-img" src="http://placehold.it/300" alt="">
-                                        <div style="text-align: center;" class="description-item mt-1 mb-2">Hobby</div>
+                                    <div class="col-sm-4">      
+                                        <a data-fancybox="gallery" href="assets/img/eletronica.png">                                  
+                                            <img class="hobby-img" src="assets/img/eletronica.png" alt="">
+                                        </a>
+                                        <div style="text-align: center;" class="description-item mt-1 mb-2">Eletrônica</div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <img class="hobby-img" src="http://placehold.it/300" alt="">
-                                        <div style="text-align: center;" class="description-item mt-1 mb-2">Hobby</div>
+                                        <a data-fancybox="gallery" href="assets/img/radioamador.jfif"> 
+                                            <img class="hobby-img" src="assets/img/radioamador.jfif" alt="">
+                                        </a>
+                                        <div style="text-align: center;" class="description-item mt-1 mb-2">Rádio Amador</div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <img class="hobby-img" src="http://placehold.it/300" alt="">
-                                        <div style="text-align: center;" class="description-item mt-1">Hobby</div>
+                                        <a data-fancybox="gallery" href="assets/img/bateria.png"> 
+                                            <img class="hobby-img" src="assets/img/bateria.png" alt="">
+                                        </a>
+                                        <div style="text-align: center;" class="description-item mt-1">Música</div>
                                     </div>
                                 </div>
                             </div>
@@ -449,6 +457,22 @@
                         <!-- PROJETO -->
                         <div class="row">
                             <div class="col-md-12 title-item"> 
+                                <span>GERENCIADOR DE EVENTOS</span>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 description-item mb-3">                                    
+                                <span>
+                                    Sistema para controle de cadastro e inscrição em atividades, possibilita a entrega de certificados de forma automática através de validação de presença feita por QRCODE
+                                    <br><a href="https://eventosfatec.dsicari.com.br" target="_blank">site</a>
+                                    <br><a href="/posts/br/2020/06/30/01/gerenciador-de-eventos.php" target="_blank">post</a>
+                                </span>
+                            </div>
+                        </div> 
+
+                        <!-- PROJETO -->
+                        <div class="row">
+                            <div class="col-md-12 title-item"> 
                                 <span>PETFEEDER</span>
                             </div>  
                         </div>
@@ -457,6 +481,7 @@
                                 <span>
                                     Alimentador automático para pets que possui balança para pesagem do alimento, webcam para visualização do pet e pagina web para configuração e interação com o alimentador. Responsável pelo desenvolvimento do design mecânico, firmware e servidor utilizando C++. 
                                     <br><a href="https://www.youtube.com/watch?v=MZubIsdSAlw" target="_blank">vídeo</a>
+                                    <br><a href="/posts/br/2019/11/27/01/petfeeder-alimentador-automatico-para-pets.php" target="_blank">post</a>
                                 </span>
                             </div>
                         </div>    
