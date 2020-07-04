@@ -55,7 +55,7 @@
                                 <div class="col-md-12">
                                     <span class="title"><?php echo($post['title']) ?></span>
                                     <hr>
-                                    <span class="text"><?php echo($post['subtitle']) ?></span>
+                                    <span class="text"><?php echo($post['subtitle']) ?> <a href="<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>"> VEJA MAIS</a></span>
                                 </div>
                             </div>
                             <div class="row mt-2">
