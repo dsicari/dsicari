@@ -40,16 +40,16 @@
                     }
                     // TODO, if filename dont exists show error page NOT FOUND
 
-                    // Get tag, to know if its project/archive/...
-                    if(in_array('project', $post['tags']) == true){
-                        // If find 'project' in tags, continue to next item on foreach
+                    // Get tag, to know if its project/archive/... or null to do nothing
+                    if(in_array('project', $post['tags']) == true || in_array('null', $post['tags']) == true){
+                        // If find 'project' or 'null' in tags, continue to next item on foreach
                         continue;
                     }
             ?> 
 
                 <div id="apresentacao" class="row">
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-10 content-boxcursor-pointer noselect" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
+                    <div class="col-sm-10 content-box cursor-pointer noselect" onclick="window.location.href = '<?php echo(str_replace('\\', '/', $rootDirectory.'/'.$filename)); ?>';">
                         <div class="container-fluid content cursor-pointer">
                             <div class="row">
                                 <div class="col-md-12">

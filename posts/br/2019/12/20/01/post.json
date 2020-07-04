@@ -1,0 +1,9 @@
+{
+    "title": "ISS SSTV",
+    "subtitle": "Imagens recebidas da estação espacial em dezembro de 2019",
+    "badges": [
+        "radioamador", "iss", "sstv"
+    ],
+    "image": "avatar.png",
+    "tags": ["post"]
+}
