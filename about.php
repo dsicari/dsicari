@@ -572,7 +572,7 @@
                             <div class="col-md-12 description-item mb-3">                                    
                                 <span>
                                     Interface entre dispositivos médicos não invasivos para transferir informações de taxa de oxigenação do sangue, batimento cardíaco e pressão arterial via internet para um computador pessoal, possibilitando um profissional da saúde realizar exames online de seu paciente e em tempo real, sem a necessidade de contato pessoal.
-                                    <br><a href=">http://g1.globo.com/sao-paulo/sorocaba-jundiai/noticia/2013/01/universitario-cria-oximetro-de-pulsosem-fio-em-sorocaba-sp.html" target="_blank">matéria G1</a>
+                                    <br><a href="http://g1.globo.com/sao-paulo/sorocaba-jundiai/noticia/2013/01/universitario-cria-oximetro-de-pulsosem-fio-em-sorocaba-sp.html" target="_blank">matéria G1</a>
                                 </span>
                             </div>
                         </div>
